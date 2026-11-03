@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Credits Desk Dashboard</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<script src="data.js"></script>
+<style>
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+  table { border-collapse: collapse; }
+  @media print { .no-print { display: none; } }
+</style>
+</head>
+<body class="bg-white text-slate-900">
+<div class="max-w-7xl mx-auto px-6 py-10">
+
+  <!-- Header -->
+  <header class="mb-8">
+    <p class="text-xs uppercase tracking-wide text-slate-500">Spendbase &middot; Cloud Funding Operations</p>
+    <h1 class="text-2xl md:text-3xl font-semibold mt-1">Credits Desk Dashboard</h1>
+    <p class="text-sm text-slate-600 mt-2 max-w-2xl">
+      Snapshot of the credits-application tracker: who applied where, how much was requested and received,
+      and which programs are worth chasing. Last updated
+      <span id="generated-at" class="font-medium"></span> &mdash; data refreshes automatically 4&times;/day.
+    </p>
+    <a id="manual-update-link" href="#" target="_blank" rel="noopener"
+       class="no-print inline-flex items-center gap-1.5 mt-3 text-sm font-medium border border-slate-300 rounded px-3 py-1.5 hover:bg-slate-50">
+      &#8635; Update data now
+    </a>
+    <p id="manual-update-hint" class="no-print text-xs text-slate-400 mt-1 max-w-xl">
+      Opens this repo's GitHub Actions page &mdash; click the green "Run workflow" button there to pull the sheet immediately. (First time? See README for one-time setup.)
+    </p>
+  </header>
+
+  <div class="flex flex-col md:flex-row gap-8 items-start">
+
+  <!-- Tab nav (left sidebar) -->
+  <nav class="flex md:flex-col gap-1 md:w-44 md:shrink-0 border-b md:border-b-0 md:border-r border-slate-200 md:pr-4 no-print">
+    <button id="tab-btn-overview" class="tab-btn text-left px-3 py-2 text-sm font-medium border-b-2 md:border-b-0 md:border-l-2 border-slate-900 text-slate-900 bg-slate-50">Overview</button>
+    <button id="tab-btn-provider" class="tab-btn text-left px-3 py-2 text-sm font-medium border-b-2 md:border-b-0 md:border-l-2 border-transparent text-slate-500">By Provider</button>
+    <button id="tab-btn-website" class="tab-btn text-left px-3 py-2 text-sm font-medium border-b-2 md:border-b-0 md:border-l-2 border-transparent text-slate-500">By Website</button>
+    <button id="tab-btn-compare" class="tab-btn text-left px-3 py-2 text-sm font-medium border-b-2 md:border-b-0 md:border-l-2 border-transparent text-slate-500">Compare</button>
+    <button id="tab-btn-programs" class="tab-btn text-left px-3 py-2 text-sm font-medium border-b-2 md:border-b-0 md:border-l-2 border-transparent text-slate-500">Program Catalog</button>
+    <button id="tab-btn-applications" class="tab-btn text-left px-3 py-2 text-sm font-medium border-b-2 md:border-b-0 md:border-l-2 border-transparent text-slate-500">Applications Log</button>
+  </nav>
+
+  <div class="flex-1 min-w-0">
+
+  <div id="tab-overview">
+
+  <!-- Period controls -->
+  <section class="flex flex-wrap items-end gap-3 mb-5 no-print">
+    <div>
+      <label class="block text-xs text-slate-500 mb-1" for="period-month">Month</label>
+      <select id="period-month" class="border border-slate-300 px-2 py-1.5 text-sm">
+        <option value="">All time</option>
+      </select>
+    </div>
+    <div>
+      <label class="block text-xs text-slate-500 mb-1" for="period-start">From</label>
+      <input id="period-start" type="date" class="border border-slate-300 px-2 py-1.5 text-sm" />
+    </div>
+    <div>
+      <label class="block text-xs text-slate-500 mb-1" for="period-end">To</label>
+      <input id="period-end" type="date" class="border border-slate-300 px-2 py-1.5 text-sm" />
+    </div>
+    <button id="period-clear" type="button" class="text-sm text-slate-500 underline underline-offset-2 pb-1.5">Reset to all time</button>
+  </section>
+
+  <!-- KPI row -->
+  <section class="mb-10">
+    <p id="kpi-period-label" class="text-xs uppercase tracking-wide text-slate-500 mb-2">All time</p>
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-px bg-slate-200 border border-slate-200">
+    <div class="bg-white p-4">
+      <p class="text-xs text-slate-500">Total applications</p>
+      <p id="kpi-total" class="text-xl font-semibold mt-1">&ndash;</p>
+    </div>
+    <div class="bg-white p-4">
+      <p class="text-xs text-slate-500">Applications received</p>
+      <p id="kpi-received-count" class="text-xl font-semibold mt-1">&ndash;</p>
+    </div>
+    <div class="bg-white p-4">
+      <p class="text-xs text-slate-500">Received $</p>
+      <p id="kpi-received" class="text-xl font-semibold mt-1">&ndash;</p>
+    </div>
+    <div class="bg-white p-4">
+      <p class="text-xs text-slate-500">Open pipeline $ (requested)</p>
+      <p id="kpi-pipeline" class="text-xl font-semibold mt-1">&ndash;</p>
+    </div>
+    <div class="bg-white p-4">
+      <p class="text-xs text-slate-500">Open applications</p>
+      <p id="kpi-open" class="text-xl font-semibold mt-1">&ndash;</p>
+    </div>
+    </div>
+  </section>
+
+  <!-- Trend chart -->
+  <section class="mb-12">
+    <div class="flex flex-wrap items-start justify-between gap-3 mb-4">
+      <div>
+        <h2 class="text-lg font-semibold">Applications &amp; credits over time</h2>
+        <p id="chart-range" class="text-sm text-slate-600"></p>
+      </div>
+      <div class="flex items-center gap-3 no-print">
+        <label class="text-xs text-slate-500">Show line</label>
+        <select id="chart-metric" class="border border-slate-300 px-2 py-1.5 text-sm">
+          <option value="applied">Applications submitted</option>
+          <option value="received">Credits received $</option>
+        </select>
+        <div class="flex border border-slate-300 overflow-hidden text-sm">
+          <button class="chart-group-btn px-3 py-1.5 bg-slate-900 text-white" data-g="day">Day</button>
+          <button class="chart-group-btn px-3 py-1.5" data-g="week">Week</button>
+          <button class="chart-group-btn px-3 py-1.5" data-g="month">Month</button>
+        </div>
+      </div>
+    </div>
+    <canvas id="trend-chart" height="90"></canvas>
+    <p class="text-xs text-slate-500 mt-2">Based on Date applied / Date received in the Applications log. Gaps mean no value was recorded that day, not zero.</p>
+  </section>
+
+  </div>
+
+  <!-- By Provider tab -->
+  <div id="tab-provider" class="hidden">
+    <section class="flex flex-wrap items-end gap-3 mb-8">
+      <div>
+        <label class="block text-xs text-slate-500 mb-1" for="provider-select">Provider</label>
+        <select id="provider-select" class="border border-slate-300 px-2 py-1.5 text-sm w-full md:w-64">
+          <option value="">Choose a provider&hellip;</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-xs text-slate-500 mb-1" for="provider-start">From</label>
+        <input id="provider-start" type="date" class="border border-slate-300 px-2 py-1.5 text-sm" />
+      </div>
+      <div>
+        <label class="block text-xs text-slate-500 mb-1" for="provider-end">To</label>
+        <input id="provider-end" type="date" class="border border-slate-300 px-2 py-1.5 text-sm" />
+      </div>
+      <button id="provider-date-clear" type="button" class="text-sm text-slate-500 underline underline-offset-2 pb-1.5">Clear dates</button>
+    </section>
+    <div id="provider-root"></div>
+  </div>
+
+  <!-- By Website tab -->
+  <div id="tab-website" class="hidden">
+    <section class="flex flex-wrap items-end gap-3 mb-8">
+      <div>
+        <label class="block text-xs text-slate-500 mb-1" for="website-select">Website / company</label>
+        <select id="website-select" class="border border-slate-300 px-2 py-1.5 text-sm w-full md:w-72">
+          <option value="">Choose a website&hellip;</option>
+        </select>
+      </div>
+    </section>
+    <div id="website-root"></div>
+  </div>
+
+  <!-- Compare tab -->
+  <div id="tab-compare" class="hidden">
+    <section class="flex flex-wrap items-start gap-6 mb-8">
+      <div>
+        <label class="block text-xs text-slate-500 mb-1" for="compare-providers">Providers</label>
+        <select id="compare-providers" multiple size="8" class="border border-slate-300 px-2 py-1.5 text-sm w-full md:w-72"></select>
+        <p class="text-xs text-slate-500 mt-1 max-w-xs">Ctrl/Cmd-click to pick several. Leave empty to compare every provider with at least one application.</p>
+      </div>
+      <div class="flex flex-col gap-4">
+        <div class="flex flex-wrap items-end gap-3">
+          <p class="text-xs font-semibold uppercase tracking-wide text-slate-400 w-full">Period A</p>
+          <div>
+            <label class="block text-xs text-slate-500 mb-1" for="compare-a-month">Month</label>
+            <select id="compare-a-month" class="border border-slate-300 px-2 py-1.5 text-sm">
+              <option value="">All time</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs text-slate-500 mb-1" for="compare-a-start">From</label>
+            <input id="compare-a-start" type="date" class="border border-slate-300 px-2 py-1.5 text-sm" />
+          </div>
+          <div>
+            <label class="block text-xs text-slate-500 mb-1" for="compare-a-end">To</label>
+            <input id="compare-a-end" type="date" class="border border-slate-300 px-2 py-1.5 text-sm" />
+          </div>
+          <button id="compare-a-clear" type="button" class="text-sm text-slate-500 underline underline-offset-2 pb-1.5">Reset</button>
+        </div>
+        <div class="flex flex-wrap items-end gap-3">
+          <p class="text-xs font-semibold uppercase tracking-wide text-slate-400 w-full">Period B <span class="normal-case text-slate-400 font-normal">(optional &mdash; to compare)</span></p>
+          <div>
+            <label class="block text-xs text-slate-500 mb-1" for="compare-b-month">Month</label>
+            <select id="compare-b-month" class="border border-slate-300 px-2 py-1.5 text-sm">
+              <option value="">None</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs text-slate-500 mb-1" for="compare-b-start">From</label>
+            <input id="compare-b-start" type="date" class="border border-slate-300 px-2 py-1.5 text-sm" />
+          </div>
+          <div>
+            <label class="block text-xs text-slate-500 mb-1" for="compare-b-end">To</label>
+            <input id="compare-b-end" type="date" class="border border-slate-300 px-2 py-1.5 text-sm" />
+          </div>
+          <button id="compare-b-clear" type="button" class="text-sm text-slate-500 underline underline-offset-2 pb-1.5">Clear</button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="flex flex-wrap items-start justify-between gap-3 mb-1">
+        <h2 class="text-lg font-semibold">Period A vs Period B</h2>
+        <div class="flex items-center gap-3 no-print">
+          <select id="compare-chart-metric" class="border border-slate-300 px-2 py-1.5 text-sm">
+            <option value="applied">Applications submitted</option>
+            <option value="received">Credits received $</option>
+          </select>
+          <div class="flex border border-slate-300 overflow-hidden text-sm">
+            <button class="compare-chart-group-btn px-3 py-1.5 bg-slate-900 text-white" data-g="day">Day</button>
+            <button class="compare-chart-group-btn px-3 py-1.5" data-g="week">Week</button>
+            <button class="compare-chart-group-btn px-3 py-1.5" data-g="month">Month</button>
+          </div>
+        </div>
+      </div>
+      <p id="compare-period-label" class="text-sm text-slate-600 mb-4">All time</p>
+      <canvas id="compare-chart" height="100"></canvas>
+      <p class="text-xs text-slate-500 mt-2">Lines are aligned by day/week/month since each period's own start date, so Period A and Period B line up even when their calendar dates differ &mdash; e.g. Day 1 of September vs Day 1 of October.</p>
+    </section>
+  </div>
+
+  <!-- Program Catalog tab -->
+  <div id="tab-programs" class="hidden">
+    <div id="programs-root"></div>
+  </div>
+
+  <!-- Applications Log tab -->
+  <div id="tab-applications" class="hidden">
+    <div id="applications-root"></div>
+  </div>
+
+  </div>
+  </div>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>
