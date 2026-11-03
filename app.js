@@ -382,20 +382,15 @@
 
       if (chart) chart.destroy();
       chart = new Chart(ctx, {
-        type: "line",
+        type: "bar",
         data: {
           labels: labels.length ? labels : ["No data"],
           datasets: [
             {
               label: metric === "applied" ? "Applications submitted" : "Credits received $",
               data: values.length ? values : [0],
-              borderColor: "#2563eb",
               backgroundColor: "#2563eb",
-              pointRadius: 3,
-              pointBackgroundColor: "#2563eb",
-              tension: 0.3,
-              borderWidth: 2,
-              maxBarThickness: 60,
+              maxBarThickness: 40,
             },
           ],
         },
@@ -498,19 +493,15 @@
       if (!ctx) return;
       if (providerChart) providerChart.destroy();
       providerChart = new Chart(ctx, {
-        type: "line",
+        type: "bar",
         data: {
           labels: labels.length ? labels : ["No data"],
           datasets: [
             {
               label: providerMetric === "applied" ? "Applications submitted" : "Credits received $",
               data: values.length ? values : [0],
-              borderColor: "#2563eb",
               backgroundColor: "#2563eb",
-              pointRadius: 3,
-              pointBackgroundColor: "#2563eb",
-              tension: 0.3,
-              borderWidth: 2,
+              maxBarThickness: 40,
             },
           ],
         },
@@ -821,42 +812,38 @@
     }
 
     function drawCompareChart(providers, rangeA, rangeB, hasB, labelA, labelB) {
+      const unitLabel = chartGroupBy === "day" ? "Day" : chartGroupBy === "week" ? "Week" : "Month";
+      const seriesA = offsetSeriesFor(rangeA, providers, chartMetric, chartGroupBy);
+      const seriesB = hasB ? offsetSeriesFor(rangeB, providers, chartMetric, chartGroupBy) : [];
+      const maxLen = Math.max(seriesA.length, seriesB.length);
+      const labels = Array.from({ length: maxLen }, (_, i) => `${unitLabel} ${i + 1}`);
+
       const datasets = [
         {
           label: `Period A (${labelA})`,
-          data: offsetSeriesFor(rangeA, providers, chartMetric, chartGroupBy),
-          borderColor: PALETTE[0],
+          data: seriesA.map((p) => p.y),
           backgroundColor: PALETTE[0],
-          pointRadius: 2.5,
-          tension: 0.3,
-          borderWidth: 2,
+          maxBarThickness: 28,
         },
       ];
       if (hasB) {
         datasets.push({
           label: `Period B (${labelB})`,
-          data: offsetSeriesFor(rangeB, providers, chartMetric, chartGroupBy),
-          borderColor: PALETTE[1],
+          data: seriesB.map((p) => p.y),
           backgroundColor: PALETTE[1],
-          pointRadius: 2.5,
-          tension: 0.3,
-          borderWidth: 2,
+          maxBarThickness: 28,
         });
       }
-
-      const unitLabel = chartGroupBy === "day" ? "Day" : chartGroupBy === "week" ? "Week" : "Month";
 
       const ctx = document.getElementById("compare-chart");
       if (compareChart) compareChart.destroy();
       compareChart = new Chart(ctx, {
-        type: "line",
-        data: { datasets },
+        type: "bar",
+        data: { labels, datasets },
         options: {
           plugins: { legend: { display: true, position: "bottom", labels: { boxWidth: 10 } } },
           scales: {
             x: {
-              type: "linear",
-              ticks: { callback: (v) => `${unitLabel} ${v + 1}`, stepSize: 1, precision: 0 },
               grid: { display: false },
               title: { display: true, text: `${unitLabel}s since period start` },
             },
