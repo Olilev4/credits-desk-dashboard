@@ -1,12 +1,12 @@
 window.DASHBOARD_DATA = {
-  "generated_at": "2026-11-11 09:03 UTC",
+  "generated_at": "2026-11-11 13:48 UTC",
   "source": "Credits desk tracker (Google Sheet)",
   "overall": {
-    "total_applications": 708,
-    "total_received_usd": 1878580.0,
+    "total_applications": 733,
+    "total_received_usd": 1478580.0,
     "open_pipeline_usd": 80000.0,
     "status_counts": {
-      "Applied": 407,
+      "Applied": 426,
       "Received": 139,
       "Blocked / unable to apply": 3,
       "Action required": 5,
@@ -14,7 +14,8 @@ window.DASHBOARD_DATA = {
       "Rejected": 131,
       "Blocked": 1,
       "Rejected by NVIDIA": 19,
-      "": 1
+      "": 1,
+      "Scheduled": 6
     }
   },
   "companies": [
@@ -72,8 +73,8 @@ window.DASHBOARD_DATA = {
       "Contact email": "yuliia.pankiv@joinvinci.ai",
       "Stage": "",
       "Account owner": "",
-      "Applications": "6",
-      "Open": "3",
+      "Applications": "8",
+      "Open": "4",
       "Approved $": "$1,000",
       "Received $": "$1,000",
       "Notes": ""
@@ -763,7 +764,7 @@ window.DASHBOARD_DATA = {
       "provider": "Tencent Cloud",
       "credit_amount": "",
       "tier": "",
-      "notes": "No"
+      "notes": "Dariia"
     },
     {
       "program": "Runware",
@@ -791,7 +792,7 @@ window.DASHBOARD_DATA = {
       "provider": "Speechmatics",
       "credit_amount": "",
       "tier": "",
-      "notes": "Yes"
+      "notes": "requires a LinkedIn profile and a phone number\nVoice as a core of a product"
     },
     {
       "program": "Resemble AI Builder's Grant",
@@ -805,7 +806,7 @@ window.DASHBOARD_DATA = {
       "provider": "Smallest.ai",
       "credit_amount": "",
       "tier": "",
-      "notes": "Yes"
+      "notes": "Voice as a core of a product\nLinkedin is optional"
     },
     {
       "program": "Qwen Cloud AI Catalyst / VC Partner",
@@ -826,7 +827,7 @@ window.DASHBOARD_DATA = {
       "provider": "Gradium",
       "credit_amount": "",
       "tier": "",
-      "notes": "Yes"
+      "notes": "Voice as a core of a product"
     },
     {
       "program": "Murf.ai Startup Incubator",
@@ -1633,7 +1634,7 @@ window.DASHBOARD_DATA = {
       "provider": "Cloudflare",
       "consultant": "Olha",
       "status": "Received",
-      "requested_usd": 50000.0,
+      "requested_usd": null,
       "approved_usd": 50000.0,
       "date_applied": "2026-08-28",
       "date_received": "2026-09-30",
@@ -4273,7 +4274,7 @@ window.DASHBOARD_DATA = {
       "consultant": "Yuliia",
       "status": "Received",
       "requested_usd": null,
-      "approved_usd": 50000.0,
+      "approved_usd": 10000.0,
       "date_applied": "2026-09-29",
       "date_received": "2026-09-30",
       "next_action": ""
@@ -4429,7 +4430,7 @@ window.DASHBOARD_DATA = {
       "consultant": "Yuliia",
       "status": "Received",
       "requested_usd": null,
-      "approved_usd": 50000.0,
+      "approved_usd": 10000.0,
       "date_applied": "2026-10-01",
       "date_received": "2026-10-30",
       "next_action": ""
@@ -4442,7 +4443,7 @@ window.DASHBOARD_DATA = {
       "consultant": "Yuliia",
       "status": "Received",
       "requested_usd": null,
-      "approved_usd": 50000.0,
+      "approved_usd": 10000.0,
       "date_applied": "2026-10-01",
       "date_received": "2026-10-12",
       "next_action": ""
@@ -4494,7 +4495,7 @@ window.DASHBOARD_DATA = {
       "consultant": "Yuliia",
       "status": "Received",
       "requested_usd": null,
-      "approved_usd": 50000.0,
+      "approved_usd": 10000.0,
       "date_applied": "2026-10-01",
       "date_received": "2026-10-12",
       "next_action": ""
@@ -4533,7 +4534,7 @@ window.DASHBOARD_DATA = {
       "consultant": "Yuliia",
       "status": "Received",
       "requested_usd": null,
-      "approved_usd": 50000.0,
+      "approved_usd": 10000.0,
       "date_applied": "2026-10-14",
       "date_received": "2026-10-19",
       "next_action": ""
@@ -4546,7 +4547,7 @@ window.DASHBOARD_DATA = {
       "consultant": "Yuliia",
       "status": "Received",
       "requested_usd": null,
-      "approved_usd": 50000.0,
+      "approved_usd": 10000.0,
       "date_applied": "2026-10-14",
       "date_received": "2026-10-19",
       "next_action": ""
@@ -4559,7 +4560,7 @@ window.DASHBOARD_DATA = {
       "consultant": "Yuliia",
       "status": "Received",
       "requested_usd": null,
-      "approved_usd": 50000.0,
+      "approved_usd": 10000.0,
       "date_applied": "2026-10-15",
       "date_received": "2026-10-19",
       "next_action": ""
@@ -4572,7 +4573,7 @@ window.DASHBOARD_DATA = {
       "consultant": "Yuliia",
       "status": "Received",
       "requested_usd": null,
-      "approved_usd": 50000.0,
+      "approved_usd": 10000.0,
       "date_applied": "2026-10-15",
       "date_received": "2026-10-19",
       "next_action": ""
@@ -4585,7 +4586,7 @@ window.DASHBOARD_DATA = {
       "consultant": "Yuliia",
       "status": "Received",
       "requested_usd": null,
-      "approved_usd": 50000.0,
+      "approved_usd": 10000.0,
       "date_applied": "2026-10-15",
       "date_received": "2026-10-19",
       "next_action": ""
@@ -4793,7 +4794,7 @@ window.DASHBOARD_DATA = {
       "consultant": "Yuliia",
       "status": "Received",
       "requested_usd": null,
-      "approved_usd": 50000.0,
+      "approved_usd": 10000.0,
       "date_applied": "2026-11-03",
       "date_received": "2026-11-06",
       "next_action": ""
@@ -4951,7 +4952,7 @@ window.DASHBOARD_DATA = {
       "requested_usd": null,
       "approved_usd": 2500.0,
       "date_applied": "2026-11-09",
-      "date_received": "2026-11-06",
+      "date_received": "2026-11-11",
       "next_action": ""
     },
     {
@@ -4977,7 +4978,7 @@ window.DASHBOARD_DATA = {
       "requested_usd": null,
       "approved_usd": 50000.0,
       "date_applied": "2026-11-10",
-      "date_received": null,
+      "date_received": "2026-11-11",
       "next_action": ""
     },
     {
@@ -4990,6 +4991,45 @@ window.DASHBOARD_DATA = {
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-10",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "valico.dev",
+      "program": "Cloudflare for Startups (Tier 2)",
+      "provider": "Cloudflare",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-11",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "Dagnul.co",
+      "program": "Cloudflare for Startups (Tier 2)",
+      "provider": "Cloudflare",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-11",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "prenos.co",
+      "program": "Cloudflare for Startups (Tier 2)",
+      "provider": "Cloudflare",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-11",
       "date_received": null,
       "next_action": ""
     },
@@ -5640,6 +5680,45 @@ window.DASHBOARD_DATA = {
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-10",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "grelot.co",
+      "program": "AWS Activate Portfolio",
+      "provider": "AWS",
+      "consultant": "Denys",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-11",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "Letztstand.com",
+      "program": "AWS Activate Portfolio",
+      "provider": "AWS",
+      "consultant": "Denys",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-11",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "Vidimus.fund",
+      "program": "AWS Activate Portfolio",
+      "provider": "AWS",
+      "consultant": "Denys",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-11",
       "date_received": null,
       "next_action": ""
     },
@@ -9831,6 +9910,58 @@ window.DASHBOARD_DATA = {
     },
     {
       "id": "",
+      "company": "bumpless.digital",
+      "program": "RunPod Startup Program",
+      "provider": "RunPod",
+      "consultant": "Yuliia",
+      "status": "Scheduled",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-11",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "",
+      "program": "RunPod Startup Program",
+      "provider": "RunPod",
+      "consultant": "Yuliia",
+      "status": "Scheduled",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-11",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "",
+      "program": "RunPod Startup Program",
+      "provider": "RunPod",
+      "consultant": "Yuliia",
+      "status": "Scheduled",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-11",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "",
+      "program": "RunPod Startup Program",
+      "provider": "RunPod",
+      "consultant": "Yuliia",
+      "status": "Scheduled",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-11",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
       "company": "ringdown.space",
       "program": "Baseten Startup Credits",
       "provider": "Baseten",
@@ -10663,6 +10794,32 @@ window.DASHBOARD_DATA = {
     },
     {
       "id": "",
+      "company": "forbear.works",
+      "program": "BytePlus vStart (ByteDance)",
+      "provider": "BytePlus (ByteDance) ModelArk",
+      "consultant": "Denys",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-11",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "plimsoll.live",
+      "program": "BytePlus vStart (ByteDance)",
+      "provider": "BytePlus (ByteDance) ModelArk",
+      "consultant": "Denys",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-11",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
       "company": "keelson.ink",
       "program": "Runware",
       "provider": "Runware",
@@ -10797,6 +10954,175 @@ window.DASHBOARD_DATA = {
       "program": "Runware",
       "provider": "Runware",
       "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-11",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "keelson.ink",
+      "program": "Kepler Plan",
+      "provider": "Kepler Plan",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-11",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "forbear.works",
+      "program": "Kepler Plan",
+      "provider": "Kepler Plan",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-11",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "spokenform.art",
+      "program": "Gradium for Startups",
+      "provider": "Gradium",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-11",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "adjournal.team",
+      "program": "Gradium for Startups",
+      "provider": "Gradium",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-11",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "ringdown.space",
+      "program": "Gradium for Startups",
+      "provider": "Gradium",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-11",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "astragal.team",
+      "program": "Gradium for Startups",
+      "provider": "Gradium",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-11",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "joinvinci",
+      "program": "Gradium for Startups",
+      "provider": "Gradium",
+      "consultant": "Yuliia",
+      "status": "Scheduled",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": null,
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "joinvinci",
+      "program": "Smallest.ai Grants",
+      "provider": "Smallest.ai",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-11",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "spokenform.art",
+      "program": "Smallest.ai Grants",
+      "provider": "Smallest.ai",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-11",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "adjournal.team",
+      "program": "Smallest.ai Grants",
+      "provider": "Smallest.ai",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-11",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "ringdown.space",
+      "program": "Smallest.ai Grants",
+      "provider": "Smallest.ai",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-11",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "astragal.team",
+      "program": "Smallest.ai Grants",
+      "provider": "Smallest.ai",
+      "consultant": "Yuliia",
+      "status": "Scheduled",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-11",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "goodcourse.study",
+      "program": "fal Startup Program",
+      "provider": "fal",
+      "consultant": "Denys",
       "status": "Applied",
       "requested_usd": null,
       "approved_usd": null,
@@ -10985,7 +11311,7 @@ window.DASHBOARD_DATA = {
       ],
       [
         "2026-11-11",
-        2
+        26
       ]
     ],
     "received": [
@@ -11007,7 +11333,7 @@ window.DASHBOARD_DATA = {
       ],
       [
         "2026-09-30",
-        100000.0
+        60000.0
       ],
       [
         "2026-10-06",
@@ -11023,7 +11349,7 @@ window.DASHBOARD_DATA = {
       ],
       [
         "2026-10-12",
-        170600.0
+        90600.0
       ],
       [
         "2026-10-13",
@@ -11039,7 +11365,7 @@ window.DASHBOARD_DATA = {
       ],
       [
         "2026-10-19",
-        252500.0
+        52500.0
       ],
       [
         "2026-10-20",
@@ -11067,7 +11393,7 @@ window.DASHBOARD_DATA = {
       ],
       [
         "2026-10-30",
-        50000.0
+        10000.0
       ],
       [
         "2026-11-02",
@@ -11079,7 +11405,7 @@ window.DASHBOARD_DATA = {
       ],
       [
         "2026-11-06",
-        167500.0
+        125000.0
       ],
       [
         "2026-11-09",
@@ -11091,7 +11417,7 @@ window.DASHBOARD_DATA = {
       ],
       [
         "2026-11-11",
-        25.0
+        52525.0
       ]
     ]
   }
