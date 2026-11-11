@@ -123,7 +123,7 @@ def main():
             }
         )
 
-    prog_rows = get_values(session, "Sheet7!A1:K500")
+    prog_rows = get_values(session, "Programs_new!A1:K500")
     programs = [p for p in (extract_program(row) for row in prog_rows[1:]) if p]
 
     comp_rows = get_values(session, "Companies!A1:J200")
