@@ -37,6 +37,79 @@
     link.href = KNOWN_REPO_ACTIONS_URL;
   })();
 
+  // "Update data" button on the Overview tab: opens the Actions run page,
+  // then polls GitHub's public REST API (no auth needed for a public repo)
+  // until a new run of update-data.yml finishes, and reloads the page so the
+  // freshly-committed data.js gets picked up.
+  (function wireOverviewUpdateButton() {
+    const btn = document.getElementById("overview-update-btn");
+    const status = document.getElementById("overview-update-status");
+    if (!btn) return;
+    const REPO = "Olilev4/credits-desk-dashboard";
+    const RUNS_URL = `https://api.github.com/repos/${REPO}/actions/workflows/update-data.yml/runs?per_page=1`;
+    const ACTIONS_PAGE = `https://github.com/${REPO}/actions/workflows/update-data.yml`;
+    let polling = false;
+
+    async function latestRunId() {
+      const resp = await fetch(RUNS_URL, { headers: { Accept: "application/vnd.github+json" } });
+      if (!resp.ok) throw new Error(`GitHub API ${resp.status}`);
+      const data = await resp.json();
+      return data.workflow_runs && data.workflow_runs[0] ? data.workflow_runs[0] : null;
+    }
+
+    async function startPolling(baselineId) {
+      polling = true;
+      const deadline = Date.now() + 5 * 60 * 1000; // give up after 5 minutes
+      status.textContent = "Waiting for you to click \"Run workflow\" on the GitHub tab that just opened\u2026 checking automatically every few seconds.";
+      while (polling && Date.now() < deadline) {
+        await new Promise((r) => setTimeout(r, 5000));
+        let run;
+        try {
+          run = await latestRunId();
+        } catch (e) {
+          status.textContent = "Couldn't reach GitHub to check progress \u2014 run it manually on the Actions tab, then refresh this page.";
+          polling = false;
+          return;
+        }
+        if (!run || run.id === baselineId) continue; // still the old run
+        if (run.status !== "completed") {
+          status.textContent = "Running\u2026 pulling the latest sheet data now.";
+          continue;
+        }
+        polling = false;
+        if (run.conclusion === "success") {
+          status.textContent = "\u2705 Updated! Reloading\u2026";
+          setTimeout(() => {
+            const sep = window.location.href.includes("?") ? "&" : "?";
+            window.location.href = window.location.href.split("#")[0] + sep + "_refresh=" + Date.now();
+          }, 600);
+        } else {
+          status.textContent = `\u26a0\ufe0f The update run finished with "${run.conclusion}". Check the Actions tab for details.`;
+        }
+        return;
+      }
+      if (polling) {
+        polling = false;
+        status.textContent = "Still waiting after 5 minutes \u2014 check the Actions tab, or refresh this page once it's done.";
+      }
+    }
+
+    btn.addEventListener("click", async () => {
+      if (polling) return;
+      btn.disabled = true;
+      status.textContent = "Opening GitHub\u2026";
+      window.open(ACTIONS_PAGE, "_blank", "noopener");
+      let baseline = null;
+      try {
+        baseline = await latestRunId();
+      } catch (e) {
+        // Fine — we'll just treat any completed run we see next as the new one.
+      }
+      btn.disabled = false;
+      startPolling(baseline ? baseline.id : null);
+    });
+  })();
+
   // Tabs
   const tabButtons = {
     overview: document.getElementById("tab-btn-overview"),

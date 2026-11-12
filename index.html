@@ -6,7 +6,11 @@
 <title>Credits Desk Dashboard</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
-<script src="data.js"></script>
+<script>
+  // Cache-bust data.js so a manual "Update data" refresh (or any reload) never
+  // serves a stale copy from the browser's or GitHub Pages' CDN cache.
+  document.write('<script src="data.js?v=' + Date.now() + '"><' + '/script>');
+</script>
 <style>
   body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
   table { border-collapse: collapse; }
@@ -49,6 +53,15 @@
   <div class="flex-1 min-w-0">
 
   <div id="tab-overview">
+
+  <!-- Update-data control -->
+  <section class="flex flex-wrap items-center gap-3 mb-5 no-print">
+    <button id="overview-update-btn" type="button"
+       class="inline-flex items-center gap-1.5 text-sm font-medium border border-slate-300 rounded px-3 py-1.5 hover:bg-slate-50">
+      &#8635; Update data
+    </button>
+    <p id="overview-update-status" class="text-xs text-slate-500"></p>
+  </section>
 
   <!-- Period controls -->
   <section class="flex flex-wrap items-end gap-3 mb-5 no-print">
@@ -114,6 +127,10 @@
           <button class="chart-group-btn px-3 py-1.5" data-g="week">Week</button>
           <button class="chart-group-btn px-3 py-1.5" data-g="month">Month</button>
         </div>
+        <div class="flex border border-slate-300 overflow-hidden text-sm">
+          <button class="chart-type-btn px-3 py-1.5" data-type="line">Line</button>
+          <button class="chart-type-btn px-3 py-1.5 bg-slate-900 text-white" data-type="bar">Bar</button>
+        </div>
       </div>
     </div>
     <canvas id="trend-chart" height="90"></canvas>
@@ -140,6 +157,17 @@
         <input id="provider-end" type="date" class="border border-slate-300 px-2 py-1.5 text-sm" />
       </div>
       <button id="provider-date-clear" type="button" class="text-sm text-slate-500 underline underline-offset-2 pb-1.5">Clear dates</button>
+      <div>
+        <label class="block text-xs text-slate-500 mb-1" for="provider-status-filter">Status</label>
+        <select id="provider-status-filter" multiple size="4" class="border border-slate-300 px-2 py-1.5 text-sm w-full md:w-48"></select>
+        <p class="text-xs text-slate-400 mt-1">Ctrl/Cmd-click for several. Empty = all.</p>
+      </div>
+      <div>
+        <label class="block text-xs text-slate-500 mb-1" for="provider-program-filter">Programs</label>
+        <select id="provider-program-filter" multiple size="4" class="border border-slate-300 px-2 py-1.5 text-sm w-full md:w-64"></select>
+        <p class="text-xs text-slate-400 mt-1">Ctrl/Cmd-click for several. Empty = all.</p>
+      </div>
+      <button id="provider-filter-clear" type="button" class="text-sm text-slate-500 underline underline-offset-2 pb-1.5">Clear filters</button>
     </section>
     <div id="provider-root"></div>
   </div>
@@ -218,11 +246,15 @@
             <button class="compare-chart-group-btn px-3 py-1.5" data-g="week">Week</button>
             <button class="compare-chart-group-btn px-3 py-1.5" data-g="month">Month</button>
           </div>
+          <div class="flex border border-slate-300 overflow-hidden text-sm">
+            <button class="compare-chart-type-btn px-3 py-1.5" data-type="line">Line</button>
+            <button class="compare-chart-type-btn px-3 py-1.5 bg-slate-900 text-white" data-type="bar">Bar</button>
+          </div>
         </div>
       </div>
       <p id="compare-period-label" class="text-sm text-slate-600 mb-4">All time</p>
       <canvas id="compare-chart" height="100"></canvas>
-      <p class="text-xs text-slate-500 mt-2">Bars are aligned by day/week/month since each period's own start date, so Period A and Period B line up even when their calendar dates differ &mdash; e.g. Day 1 of September vs Day 1 of October.</p>
+      <p id="compare-chart-caption" class="text-xs text-slate-500 mt-2">Bars are aligned by day/week/month since each period's own start date, so Period A and Period B line up even when their calendar dates differ &mdash; e.g. Day 1 of September vs Day 1 of October.</p>
     </section>
   </div>
 
