@@ -5,11 +5,23 @@
 
   document.getElementById("generated-at").textContent = D.generated_at;
 
-  // Point "Update data now" at this repo's GitHub Actions page (works once
-  // this is hosted on GitHub Pages as <user>.github.io/<repo>/...).
+  // Point "Update data now" at this repo's GitHub Actions page. Works when
+  // hosted on GitHub Pages (<user>.github.io/<repo>/...) AND on a custom
+  // domain pointed at that same Pages site — the repo is fixed either way,
+  // so we fall back to the known repo instead of hiding the button.
   (function wireManualUpdateLink() {
     const link = document.getElementById("manual-update-link");
     const host = window.location.hostname;
+    const KNOWN_REPO_ACTIONS_URL = "https://github.com/Olilev4/credits-desk-dashboard/actions/workflows/update-data.yml";
+
+    if (host === "localhost" || host === "127.0.0.1" || window.location.protocol === "file:") {
+      // Opened as a local file or local dev server — no GitHub-hosted copy to
+      // point at, so hide the button instead of linking somewhere wrong.
+      link.style.display = "none";
+      document.getElementById("manual-update-hint").style.display = "none";
+      return;
+    }
+
     const match = host.match(/^([^.]+)\.github\.io$/);
     if (match) {
       const user = match[1];
@@ -20,10 +32,9 @@
         return;
       }
     }
-    // Not on GitHub Pages yet (e.g. opened locally) — hide the button instead
-    // of linking somewhere wrong.
-    link.style.display = "none";
-    document.getElementById("manual-update-hint").style.display = "none";
+    // Any other real web host (e.g. a custom domain pointed at GitHub Pages)
+    // — fall back to the known repo.
+    link.href = KNOWN_REPO_ACTIONS_URL;
   })();
 
   // Tabs
@@ -325,6 +336,7 @@
 
     let metric = "applied";
     let groupBy = "day";
+    let chartType = "bar";
     let period = { type: "all" };
     let chart;
 
@@ -382,14 +394,20 @@
 
       if (chart) chart.destroy();
       chart = new Chart(ctx, {
-        type: "bar",
+        type: chartType,
         data: {
           labels: labels.length ? labels : ["No data"],
           datasets: [
             {
               label: metric === "applied" ? "Applications submitted" : "Credits received $",
               data: values.length ? values : [0],
-              backgroundColor: "#2563eb",
+              borderColor: "#2563eb",
+              backgroundColor: chartType === "line" ? "rgba(37,99,235,0.08)" : "#2563eb",
+              pointRadius: chartType === "line" ? 3 : 0,
+              pointBackgroundColor: "#2563eb",
+              tension: 0.3,
+              borderWidth: 2,
+              fill: chartType === "line",
               maxBarThickness: 40,
             },
           ],
@@ -414,6 +432,14 @@
         document.querySelectorAll(".chart-group-btn").forEach((b) => b.classList.remove("bg-slate-900", "text-white"));
         btn.classList.add("bg-slate-900", "text-white");
         groupBy = btn.dataset.g;
+        render();
+      });
+    });
+    document.querySelectorAll(".chart-type-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".chart-type-btn").forEach((b) => b.classList.remove("bg-slate-900", "text-white"));
+        btn.classList.add("bg-slate-900", "text-white");
+        chartType = btn.dataset.type;
         render();
       });
     });
@@ -450,10 +476,13 @@
     const select = document.getElementById("provider-select");
     const startInput = document.getElementById("provider-start");
     const endInput = document.getElementById("provider-end");
+    const statusFilter = document.getElementById("provider-status-filter");
+    const programFilter = document.getElementById("provider-program-filter");
     const out = document.getElementById("provider-root");
     let providerChart;
     let providerMetric = "applied";
     let providerGroupBy = "day";
+    let providerChartType = "bar";
 
     function groupProviderSeries(series, by) {
       if (by === "day") return series;
@@ -493,14 +522,20 @@
       if (!ctx) return;
       if (providerChart) providerChart.destroy();
       providerChart = new Chart(ctx, {
-        type: "bar",
+        type: providerChartType,
         data: {
           labels: labels.length ? labels : ["No data"],
           datasets: [
             {
               label: providerMetric === "applied" ? "Applications submitted" : "Credits received $",
               data: values.length ? values : [0],
-              backgroundColor: "#2563eb",
+              borderColor: "#2563eb",
+              backgroundColor: providerChartType === "line" ? "rgba(37,99,235,0.08)" : "#2563eb",
+              pointRadius: providerChartType === "line" ? 3 : 0,
+              pointBackgroundColor: "#2563eb",
+              tension: 0.3,
+              borderWidth: 2,
+              fill: providerChartType === "line",
               maxBarThickness: 40,
             },
           ],
@@ -526,6 +561,14 @@
           drawProviderChart(apps);
         });
       });
+      document.querySelectorAll(".provider-chart-type-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".provider-chart-type-btn").forEach((b) => b.classList.remove("bg-slate-900", "text-white"));
+          btn.classList.add("bg-slate-900", "text-white");
+          providerChartType = btn.dataset.type;
+          drawProviderChart(apps);
+        });
+      });
     }
 
     if (dataMin && dataMax) {
@@ -548,6 +591,32 @@
       select.appendChild(opt);
     });
 
+    // Status options: every status that actually appears in the data
+    const statuses = [...new Set(D.applications.map((a) => a.status).filter(Boolean))].sort();
+    statuses.forEach((s) => {
+      const opt = document.createElement("option");
+      opt.value = s;
+      opt.textContent = s;
+      statusFilter.appendChild(opt);
+    });
+
+    function populateProgramFilter(provider) {
+      programFilter.innerHTML = "";
+      const programNames = [...new Set(D.applications.filter((a) => a.provider === provider).map((a) => a.program).filter(Boolean))].sort(
+        (a, b) => a.localeCompare(b)
+      );
+      programNames.forEach((p) => {
+        const opt = document.createElement("option");
+        opt.value = p;
+        opt.textContent = p;
+        programFilter.appendChild(opt);
+      });
+    }
+
+    function selectedValues(selectEl) {
+      return [...selectEl.selectedOptions].map((o) => o.value);
+    }
+
     function currentRange() {
       const s = startInput.value;
       const e = endInput.value;
@@ -555,11 +624,21 @@
       return { start: s || dataMin, end: e || dataMax };
     }
 
-    select.addEventListener("change", () => render(select.value));
+    select.addEventListener("change", () => {
+      populateProgramFilter(select.value);
+      render(select.value);
+    });
     [startInput, endInput].forEach((input) => input.addEventListener("change", () => render(select.value)));
     document.getElementById("provider-date-clear").addEventListener("click", () => {
       startInput.value = "";
       endInput.value = "";
+      render(select.value);
+    });
+    statusFilter.addEventListener("change", () => render(select.value));
+    programFilter.addEventListener("change", () => render(select.value));
+    document.getElementById("provider-filter-clear").addEventListener("click", () => {
+      [...statusFilter.options].forEach((o) => (o.selected = false));
+      [...programFilter.options].forEach((o) => (o.selected = false));
       render(select.value);
     });
 
@@ -570,8 +649,31 @@
       }
 
       const range = currentRange();
-      const { apps, total, receivedCount, receivedUsd, pipelineUsd, winRate } = computeProviderMetrics(provider, range);
-      const programs = D.programs.filter((p) => p.provider === provider);
+      const { apps: allApps } = computeProviderMetrics(provider, range);
+      const activeStatuses = selectedValues(statusFilter);
+      const activePrograms = selectedValues(programFilter);
+      const apps = allApps
+        .filter((a) => !activeStatuses.length || activeStatuses.includes(a.status))
+        .filter((a) => !activePrograms.length || activePrograms.includes(a.program));
+
+      const receivedApps = apps.filter((a) => a.status === "Received");
+      const rejectedApps = apps.filter((a) => a.status === "Rejected");
+      const openApps = apps.filter((a) => OPEN_STATUSES.has(a.status));
+      const total = apps.length;
+      const receivedCount = receivedApps.length;
+      const receivedUsd = receivedApps.reduce((s, a) => s + (a.approved_usd || 0), 0);
+      const pipelineUsd = openApps.reduce((s, a) => s + (a.requested_usd || 0), 0);
+      const decided = receivedApps.length + rejectedApps.length;
+      const winRate = decided ? Math.round((receivedApps.length / decided) * 1000) / 10 : null;
+
+      const filterNote =
+        activeStatuses.length || activePrograms.length
+          ? ` (filtered${activeStatuses.length ? ` by status: ${activeStatuses.join(", ")}` : ""}${
+              activePrograms.length ? `${activeStatuses.length ? ";" : ""} program: ${activePrograms.join(", ")}` : ""
+            })`
+          : "";
+
+      const programs = D.programs.filter((p) => p.provider === provider && (!activePrograms.length || activePrograms.includes(p.program)));
 
       const programRows = programs
         .map(
@@ -642,6 +744,10 @@
                 <button class="provider-chart-group-btn px-3 py-1.5 ${providerGroupBy === "week" ? "bg-slate-900 text-white" : ""}" data-g="week">Week</button>
                 <button class="provider-chart-group-btn px-3 py-1.5 ${providerGroupBy === "month" ? "bg-slate-900 text-white" : ""}" data-g="month">Month</button>
               </div>
+              <div class="flex border border-slate-300 overflow-hidden text-sm">
+                <button class="provider-chart-type-btn px-3 py-1.5 ${providerChartType === "line" ? "bg-slate-900 text-white" : ""}" data-type="line">Line</button>
+                <button class="provider-chart-type-btn px-3 py-1.5 ${providerChartType === "bar" ? "bg-slate-900 text-white" : ""}" data-type="bar">Bar</button>
+              </div>
             </div>
           </div>
           <canvas id="provider-chart" height="90"></canvas>
@@ -667,7 +773,7 @@
 
         <section>
           <h3 class="text-base font-semibold mb-1">Applications to ${provider}</h3>
-          <p class="text-sm text-slate-600 mb-3">${apps.length} row${apps.length === 1 ? "" : "s"}${range ? ` touching ${range.start} to ${range.end}` : ""}.</p>
+          <p class="text-sm text-slate-600 mb-3">${apps.length} row${apps.length === 1 ? "" : "s"}${range ? ` touching ${range.start} to ${range.end}` : ""}${filterNote}.</p>
           <div class="overflow-x-auto max-h-[28rem] overflow-y-auto border border-slate-200">
             <table class="w-full text-sm">
               <thead class="sticky top-0 bg-white">
@@ -699,6 +805,7 @@
     const bEnd = document.getElementById("compare-b-end");
     let chartMetric = "applied";
     let chartGroupBy = "day";
+    let compareChartType = "bar";
     let compareChart;
 
     // Providers that actually have at least one logged application (comparison is about real activity)
@@ -822,7 +929,11 @@
         {
           label: `Period A (${labelA})`,
           data: seriesA.map((p) => p.y),
-          backgroundColor: PALETTE[0],
+          borderColor: PALETTE[0],
+          backgroundColor: compareChartType === "line" ? "transparent" : PALETTE[0],
+          pointRadius: compareChartType === "line" ? 2.5 : 0,
+          tension: 0.3,
+          borderWidth: 2,
           maxBarThickness: 28,
         },
       ];
@@ -830,15 +941,23 @@
         datasets.push({
           label: `Period B (${labelB})`,
           data: seriesB.map((p) => p.y),
-          backgroundColor: PALETTE[1],
+          borderColor: PALETTE[1],
+          backgroundColor: compareChartType === "line" ? "transparent" : PALETTE[1],
+          pointRadius: compareChartType === "line" ? 2.5 : 0,
+          tension: 0.3,
+          borderWidth: 2,
           maxBarThickness: 28,
         });
       }
 
       const ctx = document.getElementById("compare-chart");
       if (compareChart) compareChart.destroy();
+      document.getElementById("compare-chart-caption").textContent =
+        compareChartType === "line"
+          ? "Lines are aligned by day/week/month since each period's own start date, so Period A and Period B line up even when their calendar dates differ — e.g. Day 1 of September vs Day 1 of October."
+          : "Bars are aligned by day/week/month since each period's own start date, so Period A and Period B line up even when their calendar dates differ — e.g. Day 1 of September vs Day 1 of October.";
       compareChart = new Chart(ctx, {
-        type: "bar",
+        type: compareChartType,
         data: { labels, datasets },
         options: {
           plugins: { legend: { display: true, position: "bottom", labels: { boxWidth: 10 } } },
@@ -901,6 +1020,14 @@
         document.querySelectorAll(".compare-chart-group-btn").forEach((b) => b.classList.remove("bg-slate-900", "text-white"));
         btn.classList.add("bg-slate-900", "text-white");
         chartGroupBy = btn.dataset.g;
+        render();
+      });
+    });
+    document.querySelectorAll(".compare-chart-type-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".compare-chart-type-btn").forEach((b) => b.classList.remove("bg-slate-900", "text-white"));
+        btn.classList.add("bg-slate-900", "text-white");
+        compareChartType = btn.dataset.type;
         render();
       });
     });
