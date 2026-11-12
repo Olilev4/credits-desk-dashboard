@@ -1,12 +1,12 @@
 window.DASHBOARD_DATA = {
-  "generated_at": "2026-11-11 13:48 UTC",
+  "generated_at": "2026-11-12 00:15 UTC",
   "source": "Credits desk tracker (Google Sheet)",
   "overall": {
     "total_applications": 733,
     "total_received_usd": 1478580.0,
     "open_pipeline_usd": 80000.0,
     "status_counts": {
-      "Applied": 426,
+      "Applied": 427,
       "Received": 139,
       "Blocked / unable to apply": 3,
       "Action required": 5,
@@ -15,7 +15,8 @@ window.DASHBOARD_DATA = {
       "Blocked": 1,
       "Rejected by NVIDIA": 19,
       "": 1,
-      "Scheduled": 6
+      "Approved": 1,
+      "Scheduled": 4
     }
   },
   "companies": [
@@ -7340,9 +7341,9 @@ window.DASHBOARD_DATA = {
       "program": "Fish Audio Startup Program",
       "provider": "Fish Audio Startup Program",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Approved",
       "requested_usd": null,
-      "approved_usd": null,
+      "approved_usd": 1801.0,
       "date_applied": "2026-10-12",
       "date_received": null,
       "next_action": ""
@@ -9914,7 +9915,20 @@ window.DASHBOARD_DATA = {
       "program": "RunPod Startup Program",
       "provider": "RunPod",
       "consultant": "Yuliia",
-      "status": "Scheduled",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-11",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "stickful.link",
+      "program": "RunPod Startup Program",
+      "provider": "RunPod",
+      "consultant": "Yuliia",
+      "status": "Applied",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-11",
@@ -9930,7 +9944,7 @@ window.DASHBOARD_DATA = {
       "status": "Scheduled",
       "requested_usd": null,
       "approved_usd": null,
-      "date_applied": "2026-11-11",
+      "date_applied": null,
       "date_received": null,
       "next_action": ""
     },
@@ -9943,20 +9957,7 @@ window.DASHBOARD_DATA = {
       "status": "Scheduled",
       "requested_usd": null,
       "approved_usd": null,
-      "date_applied": "2026-11-11",
-      "date_received": null,
-      "next_action": ""
-    },
-    {
-      "id": "",
-      "company": "",
-      "program": "RunPod Startup Program",
-      "provider": "RunPod",
-      "consultant": "Yuliia",
-      "status": "Scheduled",
-      "requested_usd": null,
-      "approved_usd": null,
-      "date_applied": "2026-11-11",
+      "date_applied": null,
       "date_received": null,
       "next_action": ""
     },
@@ -11311,7 +11312,7 @@ window.DASHBOARD_DATA = {
       ],
       [
         "2026-11-11",
-        26
+        24
       ]
     ],
     "received": [
