@@ -1,22 +1,22 @@
 window.DASHBOARD_DATA = {
-  "generated_at": "2026-11-12 00:15 UTC",
+  "generated_at": "2026-11-12 14:51 UTC",
   "source": "Credits desk tracker (Google Sheet)",
   "overall": {
-    "total_applications": 733,
-    "total_received_usd": 1478580.0,
+    "total_applications": 762,
+    "total_received_usd": 1491080.0,
     "open_pipeline_usd": 80000.0,
     "status_counts": {
-      "Applied": 427,
-      "Received": 139,
+      "Applied": 455,
+      "Received": 141,
       "Blocked / unable to apply": 3,
       "Action required": 5,
       "Pending": 2,
       "Rejected": 131,
       "Blocked": 1,
       "Rejected by NVIDIA": 19,
-      "": 1,
       "Approved": 1,
-      "Scheduled": 4
+      "Scheduled": 3,
+      "": 1
     }
   },
   "companies": [
@@ -75,7 +75,7 @@ window.DASHBOARD_DATA = {
       "Stage": "",
       "Account owner": "",
       "Applications": "8",
-      "Open": "4",
+      "Open": "6",
       "Approved $": "$1,000",
       "Received $": "$1,000",
       "Notes": ""
@@ -779,7 +779,7 @@ window.DASHBOARD_DATA = {
       "provider": "LiveKit",
       "credit_amount": "",
       "tier": "",
-      "notes": "Yes"
+      "notes": "Denys"
     },
     {
       "program": "Telnyx Startups",
@@ -842,7 +842,7 @@ window.DASHBOARD_DATA = {
       "provider": "Requesty",
       "credit_amount": "",
       "tier": "",
-      "notes": "Yes"
+      "notes": "Companies that qualify must be backed by an accelerator or VC"
     },
     {
       "program": "Morph LLM Startups",
@@ -905,7 +905,7 @@ window.DASHBOARD_DATA = {
       "provider": "3DS Outscale (Dassault)",
       "credit_amount": "",
       "tier": "",
-      "notes": "No"
+      "notes": "Luisa"
     },
     {
       "program": "Fly.io for Startups",
@@ -954,7 +954,7 @@ window.DASHBOARD_DATA = {
       "provider": "Regolo.ai (Seeweb)",
       "credit_amount": "",
       "tier": "",
-      "notes": "No"
+      "notes": "Luisa"
     },
     {
       "program": "Crusoe Intelligence Foundry",
@@ -3944,19 +3944,6 @@ window.DASHBOARD_DATA = {
     },
     {
       "id": "",
-      "company": "joinvinci",
-      "program": "",
-      "provider": "",
-      "consultant": "",
-      "status": "",
-      "requested_usd": null,
-      "approved_usd": null,
-      "date_applied": null,
-      "date_received": null,
-      "next_action": ""
-    },
-    {
-      "id": "",
       "company": "ledgenone.com",
       "program": "Snowflake for Startups (Cortex AI)",
       "provider": "Snowflake",
@@ -5014,9 +5001,9 @@ window.DASHBOARD_DATA = {
       "program": "Cloudflare for Startups (Tier 2)",
       "provider": "Cloudflare",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Received",
       "requested_usd": null,
-      "approved_usd": null,
+      "approved_usd": 2500.0,
       "date_applied": "2026-11-11",
       "date_received": null,
       "next_action": ""
@@ -5027,10 +5014,49 @@ window.DASHBOARD_DATA = {
       "program": "Cloudflare for Startups (Tier 2)",
       "provider": "Cloudflare",
       "consultant": "Yuliia",
+      "status": "Received",
+      "requested_usd": null,
+      "approved_usd": 10000.0,
+      "date_applied": "2026-11-11",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "grelot.co",
+      "program": "Cloudflare for Startups (Tier 2)",
+      "provider": "Cloudflare",
+      "consultant": "Yuliia",
       "status": "Applied",
       "requested_usd": null,
       "approved_usd": null,
-      "date_applied": "2026-11-11",
+      "date_applied": "2026-11-12",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "Letztstand.com",
+      "program": "Cloudflare for Startups (Tier 2)",
+      "provider": "Cloudflare",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-12",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "Vidimus.fund",
+      "program": "Cloudflare for Startups (Tier 2)",
+      "provider": "Cloudflare",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-12",
       "date_received": null,
       "next_action": ""
     },
@@ -5720,6 +5746,19 @@ window.DASHBOARD_DATA = {
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-11",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "quinzena.org",
+      "program": "AWS Activate Portfolio",
+      "provider": "AWS",
+      "consultant": "Denys",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-12",
       "date_received": null,
       "next_action": ""
     },
@@ -9508,6 +9547,19 @@ window.DASHBOARD_DATA = {
     },
     {
       "id": "",
+      "company": "tringel.pro",
+      "program": "Novita AI Startup Program",
+      "provider": "Novita AI",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-12",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
       "company": "ledgenone.com",
       "program": "RunPod Startup Program",
       "provider": "RunPod",
@@ -9937,7 +9989,46 @@ window.DASHBOARD_DATA = {
     },
     {
       "id": "",
-      "company": "",
+      "company": "adjournal.team",
+      "program": "RunPod Startup Program",
+      "provider": "RunPod",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-11",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "Celest.day",
+      "program": "RunPod Startup Program",
+      "provider": "RunPod",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-12",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "kernpin.tech",
+      "program": "RunPod Startup Program",
+      "provider": "RunPod",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-12",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "cotejo.club",
       "program": "RunPod Startup Program",
       "provider": "RunPod",
       "consultant": "Yuliia",
@@ -9950,7 +10041,20 @@ window.DASHBOARD_DATA = {
     },
     {
       "id": "",
-      "company": "",
+      "company": "pirca.co",
+      "program": "RunPod Startup Program",
+      "provider": "RunPod",
+      "consultant": "Yuliia",
+      "status": "Scheduled",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": null,
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "Dagnul.co",
       "program": "RunPod Startup Program",
       "provider": "RunPod",
       "consultant": "Yuliia",
@@ -10861,13 +10965,26 @@ window.DASHBOARD_DATA = {
     {
       "id": "",
       "company": "keelson.ink",
-      "program": "LiveKit",
+      "program": "LiveKit Startups",
       "provider": "LiveKit",
       "consultant": "Dariia",
       "status": "Applied",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-10",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "forbear.works",
+      "program": "LiveKit Startups",
+      "provider": "LiveKit",
+      "consultant": "Denys",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-12",
       "date_received": null,
       "next_action": ""
     },
@@ -11046,10 +11163,10 @@ window.DASHBOARD_DATA = {
       "program": "Gradium for Startups",
       "provider": "Gradium",
       "consultant": "Yuliia",
-      "status": "Scheduled",
+      "status": "Applied",
       "requested_usd": null,
       "approved_usd": null,
-      "date_applied": null,
+      "date_applied": "2026-11-12",
       "date_received": null,
       "next_action": ""
     },
@@ -11111,10 +11228,62 @@ window.DASHBOARD_DATA = {
       "program": "Smallest.ai Grants",
       "provider": "Smallest.ai",
       "consultant": "Yuliia",
-      "status": "Scheduled",
+      "status": "Applied",
       "requested_usd": null,
       "approved_usd": null,
-      "date_applied": "2026-11-11",
+      "date_applied": "2026-11-12",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "neptyne.tech",
+      "program": "Requesty",
+      "provider": "Requesty",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-12",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "goodcourse.study",
+      "program": "Requesty",
+      "provider": "Requesty",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-12",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "Ableitung.co",
+      "program": "Requesty",
+      "provider": "Requesty",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-12",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "joinvinci",
+      "program": "Speechmatics",
+      "provider": "Speechmatics",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-12",
       "date_received": null,
       "next_action": ""
     },
@@ -11128,6 +11297,214 @@ window.DASHBOARD_DATA = {
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-11",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "moru.solutions",
+      "program": "Baidu AI Cloud Accelerator",
+      "provider": "Baidu",
+      "consultant": "Luisa",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-11",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "nalin.click",
+      "program": "Baidu AI Cloud Accelerator",
+      "provider": "Baidu",
+      "consultant": "Luisa",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-11",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "kernpin.tech",
+      "program": "",
+      "provider": "",
+      "consultant": "",
+      "status": "",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": null,
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "titleblock.watch",
+      "program": "Kepler Plan",
+      "provider": "Tencent",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-12",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "dailies.social",
+      "program": "Kepler Plan",
+      "provider": "Tencent",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-12",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "understudy.fit",
+      "program": "Kepler Plan",
+      "provider": "Tencent",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-12",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "understudy.fit",
+      "program": "Runware",
+      "provider": "Runware",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-12",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "recension.bond",
+      "program": "Runware",
+      "provider": "Runware",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-12",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "forbear.works",
+      "program": "Runware",
+      "provider": "Runware",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-12",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "pirca.co",
+      "program": "ElevenLabs Startup Grant",
+      "provider": "ElevenLabs",
+      "consultant": "Denys",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-12",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "cofferdam.online",
+      "program": "ElevenLabs Startup Grant",
+      "provider": "ElevenLabs",
+      "consultant": "Denys",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-12",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "bitting.bid",
+      "program": "ElevenLabs Startup Grant",
+      "provider": "ElevenLabs",
+      "consultant": "Denys",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-12",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "kernpin.tech",
+      "program": "Nebius AI Builder Program\nCompute Grants",
+      "provider": "Nebius",
+      "consultant": "Denys",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-12",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "recorrida.live",
+      "program": "Nebius AI Builder Program\r\nCompute Grants",
+      "provider": "Nebius",
+      "consultant": "Denys",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-12",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "downclimb.ink",
+      "program": "Nebius AI Builder Program\nCompute Grants",
+      "provider": "Nebius",
+      "consultant": "Denys",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-12",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "tamis.services",
+      "program": "Nebius AI Builder Program\nCompute Grants",
+      "provider": "Nebius",
+      "consultant": "Denys",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-12",
       "date_received": null,
       "next_action": ""
     }
@@ -11312,7 +11689,11 @@ window.DASHBOARD_DATA = {
       ],
       [
         "2026-11-11",
-        24
+        26
+      ],
+      [
+        "2026-11-12",
+        27
       ]
     ],
     "received": [
