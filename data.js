@@ -1,12 +1,12 @@
 window.DASHBOARD_DATA = {
-  "generated_at": "2026-11-12 14:51 UTC",
+  "generated_at": "2026-11-12 23:21 UTC",
   "source": "Credits desk tracker (Google Sheet)",
   "overall": {
-    "total_applications": 762,
+    "total_applications": 765,
     "total_received_usd": 1491080.0,
     "open_pipeline_usd": 80000.0,
     "status_counts": {
-      "Applied": 455,
+      "Applied": 458,
       "Received": 141,
       "Blocked / unable to apply": 3,
       "Action required": 5,
@@ -9560,6 +9560,19 @@ window.DASHBOARD_DATA = {
     },
     {
       "id": "",
+      "company": "pirca.co",
+      "program": "Novita AI Startup Program",
+      "provider": "Novita AI",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-12",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
       "company": "ledgenone.com",
       "program": "RunPod Startup Program",
       "provider": "RunPod",
@@ -11380,6 +11393,32 @@ window.DASHBOARD_DATA = {
     },
     {
       "id": "",
+      "company": "pintle.cloud",
+      "program": "Kepler Plan",
+      "provider": "Tencent",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-12",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "pirca.co",
+      "program": "Runware",
+      "provider": "Runware",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-12",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
       "company": "understudy.fit",
       "program": "Runware",
       "provider": "Runware",
@@ -11693,7 +11732,7 @@ window.DASHBOARD_DATA = {
       ],
       [
         "2026-11-12",
-        27
+        30
       ]
     ],
     "received": [
