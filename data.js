@@ -1,12 +1,12 @@
 window.DASHBOARD_DATA = {
-  "generated_at": "2026-11-13 14:13 UTC",
+  "generated_at": "2026-11-13 23:23 UTC",
   "source": "Credits desk tracker (Google Sheet)",
   "overall": {
     "total_applications": 791,
     "total_received_usd": 1508080.0,
     "open_pipeline_usd": 80000.0,
     "status_counts": {
-      "Applied": 474,
+      "Applied": 475,
       "Received": 147,
       "Blocked / unable to apply": 3,
       "Action required": 5,
@@ -15,7 +15,7 @@ window.DASHBOARD_DATA = {
       "Blocked": 1,
       "Rejected by NVIDIA": 19,
       "Approved": 2,
-      "Scheduled": 5,
+      "Scheduled": 4,
       "": 1
     }
   },
@@ -11433,13 +11433,13 @@ window.DASHBOARD_DATA = {
     {
       "id": "",
       "company": "ferrule.fit",
-      "program": "",
-      "provider": "",
-      "consultant": "",
-      "status": "Scheduled",
+      "program": "Smallest.ai Grants",
+      "provider": "Smallest.ai",
+      "consultant": "Yuliia",
+      "status": "Applied",
       "requested_usd": null,
       "approved_usd": null,
-      "date_applied": null,
+      "date_applied": "2026-11-13",
       "date_received": null,
       "next_action": ""
     },
@@ -12074,7 +12074,7 @@ window.DASHBOARD_DATA = {
       ],
       [
         "2026-11-13",
-        24
+        25
       ]
     ],
     "received": [
