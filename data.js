@@ -1,21 +1,21 @@
 window.DASHBOARD_DATA = {
-  "generated_at": "2026-11-13 05:46 UTC",
+  "generated_at": "2026-11-13 14:13 UTC",
   "source": "Credits desk tracker (Google Sheet)",
   "overall": {
-    "total_applications": 765,
-    "total_received_usd": 1491080.0,
+    "total_applications": 791,
+    "total_received_usd": 1508080.0,
     "open_pipeline_usd": 80000.0,
     "status_counts": {
-      "Applied": 458,
-      "Received": 141,
+      "Applied": 474,
+      "Received": 147,
       "Blocked / unable to apply": 3,
       "Action required": 5,
       "Pending": 2,
-      "Rejected": 131,
+      "Rejected": 132,
       "Blocked": 1,
       "Rejected by NVIDIA": 19,
-      "Approved": 1,
-      "Scheduled": 3,
+      "Approved": 2,
+      "Scheduled": 5,
       "": 1
     }
   },
@@ -74,7 +74,7 @@ window.DASHBOARD_DATA = {
       "Contact email": "yuliia.pankiv@joinvinci.ai",
       "Stage": "",
       "Account owner": "",
-      "Applications": "8",
+      "Applications": "9",
       "Open": "6",
       "Approved $": "$1,000",
       "Received $": "$1,000",
@@ -215,6 +215,13 @@ window.DASHBOARD_DATA = {
       "notes": "Relevant"
     },
     {
+      "program": "AWS Activate Portfolio",
+      "provider": "AWS",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "Relevant"
+    },
+    {
       "program": "Google Cloud AI Track",
       "provider": "Google Cloud",
       "credit_amount": "",
@@ -229,53 +236,11 @@ window.DASHBOARD_DATA = {
       "notes": "Irrelevant"
     },
     {
-      "program": "Anthropic Anthology Fund (Menlo Ventures)",
-      "provider": "Menlo Ventures + Anthropic",
-      "credit_amount": "",
-      "tier": "",
-      "notes": "Vadym"
-    },
-    {
       "program": "Google for Startups Cloud — AI-first tier",
       "provider": "Google",
       "credit_amount": "",
       "tier": "",
       "notes": "is the same as Google Cloud AI Track"
-    },
-    {
-      "program": "NVIDIA Inception → AWS Special",
-      "provider": "NVIDIA + AWS",
-      "credit_amount": "",
-      "tier": "",
-      "notes": "Olia"
-    },
-    {
-      "program": "NVIDIA NIM Free API",
-      "provider": "NVIDIA",
-      "credit_amount": "",
-      "tier": "",
-      "notes": "Vadym"
-    },
-    {
-      "program": "NVIDIA DGX Cloud Credits",
-      "provider": "NVIDIA",
-      "credit_amount": "",
-      "tier": "",
-      "notes": "Vadym"
-    },
-    {
-      "program": "NVIDIA Inception — Premier tier",
-      "provider": "NVIDIA",
-      "credit_amount": "",
-      "tier": "",
-      "notes": "Vadym"
-    },
-    {
-      "program": "NVIDIA Inception (Gateway)",
-      "provider": "NVIDIA",
-      "credit_amount": "",
-      "tier": "",
-      "notes": "Vadym"
     },
     {
       "program": "OpenAI for Startups (Brex route)",
@@ -289,14 +254,14 @@ window.DASHBOARD_DATA = {
       "provider": "Akamai",
       "credit_amount": "",
       "tier": "",
-      "notes": "Yuliia"
+      "notes": "developers marked it as irrelevant"
     },
     {
       "program": "Anthropic Startup Program (VC route)",
       "provider": "Anthropic",
       "credit_amount": "",
       "tier": "",
-      "notes": "Vadym"
+      "notes": "CLOSED program"
     },
     {
       "program": "Anthropic Startup Program (Direct)",
@@ -310,21 +275,14 @@ window.DASHBOARD_DATA = {
       "provider": "Anyscale",
       "credit_amount": "",
       "tier": "",
-      "notes": "Yuliia"
+      "notes": "developers marked it as irrelevant"
     },
     {
       "program": "AssemblyAI Startup Program",
       "provider": "AssemblyAI",
       "credit_amount": "",
       "tier": "",
-      "notes": "Mykola"
-    },
-    {
-      "program": "AWS Activate Portfolio",
-      "provider": "AWS",
-      "credit_amount": "",
-      "tier": "",
-      "notes": "Olha"
+      "notes": "Relevant"
     },
     {
       "program": "Backblaze Flamethrower",
@@ -345,7 +303,7 @@ window.DASHBOARD_DATA = {
       "provider": "Baseten",
       "credit_amount": "",
       "tier": "",
-      "notes": "Vadym"
+      "notes": "Relevant"
     },
     {
       "program": "Bright Data AI Startup Program",
@@ -380,14 +338,14 @@ window.DASHBOARD_DATA = {
       "provider": "Crusoe",
       "credit_amount": "",
       "tier": "",
-      "notes": "no active program"
+      "notes": "Relevant"
     },
     {
       "program": "Databricks for Startups",
       "provider": "Databricks",
       "credit_amount": "",
       "tier": "",
-      "notes": "Vadym"
+      "notes": "Relevant"
     },
     {
       "program": "Daytona Startup Grid",
@@ -401,7 +359,7 @@ window.DASHBOARD_DATA = {
       "provider": "DeepInfra",
       "credit_amount": "",
       "tier": "",
-      "notes": "Yuliia"
+      "notes": "Relevant"
     },
     {
       "program": "E2B for Startups",
@@ -779,14 +737,14 @@ window.DASHBOARD_DATA = {
       "provider": "LiveKit",
       "credit_amount": "",
       "tier": "",
-      "notes": "Denys"
+      "notes": "Dariia"
     },
     {
       "program": "Telnyx Startups",
       "provider": "Telnyx",
       "credit_amount": "",
       "tier": "",
-      "notes": "Yes"
+      "notes": "From the application \"Your product must have a working voice AI agent front and center.\""
     },
     {
       "program": "Speechmatics Startup Program",
@@ -794,13 +752,6 @@ window.DASHBOARD_DATA = {
       "credit_amount": "",
       "tier": "",
       "notes": "requires a LinkedIn profile and a phone number\nVoice as a core of a product"
-    },
-    {
-      "program": "Resemble AI Builder's Grant",
-      "provider": "Resemble AI",
-      "credit_amount": "",
-      "tier": "",
-      "notes": "No"
     },
     {
       "program": "Smallest.ai Grants",
@@ -817,25 +768,11 @@ window.DASHBOARD_DATA = {
       "notes": "Yes"
     },
     {
-      "program": "Gladia Startup Studio",
-      "provider": "Gladia",
-      "credit_amount": "",
-      "tier": "",
-      "notes": "No"
-    },
-    {
       "program": "Gradium for Startups",
       "provider": "Gradium",
       "credit_amount": "",
       "tier": "",
       "notes": "Voice as a core of a product"
-    },
-    {
-      "program": "Murf.ai Startup Incubator",
-      "provider": "Murf AI",
-      "credit_amount": "",
-      "tier": "",
-      "notes": "No"
     },
     {
       "program": "Requesty.ai Startup",
@@ -845,88 +782,11 @@ window.DASHBOARD_DATA = {
       "notes": "Companies that qualify must be backed by an accelerator or VC"
     },
     {
-      "program": "Morph LLM Startups",
-      "provider": "Morph",
-      "credit_amount": "",
-      "tier": "",
-      "notes": "No"
-    },
-    {
-      "program": "Inference.net Grants",
-      "provider": "Inference.net",
-      "credit_amount": "",
-      "tier": "",
-      "notes": "No"
-    },
-    {
-      "program": "Featherless.ai Sponsorship",
-      "provider": "Featherless AI",
-      "credit_amount": "",
-      "tier": "",
-      "notes": "No"
-    },
-    {
-      "program": "Prime Intellect (Fast Compute Grants)",
-      "provider": "Prime Intellect",
-      "credit_amount": "",
-      "tier": "",
-      "notes": "No"
-    },
-    {
-      "program": "Koyeb for Startups",
-      "provider": "Koyeb",
-      "credit_amount": "",
-      "tier": "",
-      "notes": "No"
-    },
-    {
-      "program": "Denvr AI Ascend",
-      "provider": "Denvr",
-      "credit_amount": "",
-      "tier": "",
-      "notes": "No"
-    },
-    {
-      "program": "CloudRift AI Grant",
-      "provider": "CloudRift",
-      "credit_amount": "",
-      "tier": "",
-      "notes": "No"
-    },
-    {
-      "program": "Tencent Cloud Startup Program",
-      "provider": "Tencent Cloud",
-      "credit_amount": "",
-      "tier": "",
-      "notes": "No"
-    },
-    {
       "program": "Outscale for Entrepreneurs",
       "provider": "3DS Outscale (Dassault)",
       "credit_amount": "",
       "tier": "",
       "notes": "Luisa"
-    },
-    {
-      "program": "Fly.io for Startups",
-      "provider": "Fly.io",
-      "credit_amount": "",
-      "tier": "",
-      "notes": "No"
-    },
-    {
-      "program": "Nosana Grants",
-      "provider": "Nosana",
-      "credit_amount": "",
-      "tier": "",
-      "notes": "No"
-    },
-    {
-      "program": "STACKIT Startup Program",
-      "provider": "STACKIT (Schwarz Group)",
-      "credit_amount": "",
-      "tier": "",
-      "notes": "No"
     },
     {
       "program": "Naver Cloud Greenhouse",
@@ -968,7 +828,7 @@ window.DASHBOARD_DATA = {
       "provider": "Deepinfra",
       "credit_amount": "",
       "tier": "",
-      "notes": "Yes"
+      "notes": "Denys"
     },
     {
       "program": "Algolia",
@@ -985,13 +845,6 @@ window.DASHBOARD_DATA = {
       "notes": "not relevant"
     },
     {
-      "program": "Deepgram for Startups",
-      "provider": "Deepgram",
-      "credit_amount": "",
-      "tier": "",
-      "notes": "Mykola"
-    },
-    {
       "program": "DigitalOcean Hatch",
       "provider": "DigitalOcean",
       "credit_amount": "",
@@ -1004,13 +857,6 @@ window.DASHBOARD_DATA = {
       "credit_amount": "",
       "tier": "",
       "notes": "is the same as Google Cloud AI Track"
-    },
-    {
-      "program": "FounderPass",
-      "provider": "FounderPass",
-      "credit_amount": "",
-      "tier": "",
-      "notes": "No"
     },
     {
       "program": "Linode / Akamai",
@@ -1074,13 +920,6 @@ window.DASHBOARD_DATA = {
       "credit_amount": "",
       "tier": "",
       "notes": "not giving any free credits"
-    },
-    {
-      "program": "AWS Build on Trainium",
-      "provider": "Amazon",
-      "credit_amount": "",
-      "tier": "",
-      "notes": "Olia"
     },
     {
       "program": "AMD AI Developer Program",
@@ -1230,13 +1069,6 @@ window.DASHBOARD_DATA = {
       "notes": "currently closed"
     },
     {
-      "program": "Huawei Cloud Startup Program",
-      "provider": "Huawei Cloud",
-      "credit_amount": "",
-      "tier": "",
-      "notes": "Huawei confirms that applicants must complete enterprise verification and upload Certificate of Incorporation or Business Registration Certificate (Business License)"
-    },
-    {
       "program": "Hugging Face",
       "provider": "Hugging Face",
       "credit_amount": "",
@@ -1384,13 +1216,6 @@ window.DASHBOARD_DATA = {
       "notes": "offers discounts for  AI startups"
     },
     {
-      "program": "Ramp Startup Perks",
-      "provider": "Ramp",
-      "credit_amount": "",
-      "tier": "",
-      "notes": "platform though which you can gain access to other programs"
-    },
-    {
       "program": "Redis",
       "provider": "Redis",
       "credit_amount": "",
@@ -1409,7 +1234,7 @@ window.DASHBOARD_DATA = {
       "provider": "Runway",
       "credit_amount": "",
       "tier": "",
-      "notes": "No"
+      "notes": "Irrelevant"
     },
     {
       "program": "SambaNova Developer Early Access Program",
@@ -1599,6 +1424,181 @@ window.DASHBOARD_DATA = {
       "credit_amount": "",
       "tier": "",
       "notes": "Irrelevant"
+    },
+    {
+      "program": "Resemble AI Builder's Grant",
+      "provider": "Resemble AI",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "Irrelevant"
+    },
+    {
+      "program": "Morph LLM Startups",
+      "provider": "Morph",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "Irrelevant"
+    },
+    {
+      "program": "Inference.net Grants",
+      "provider": "Inference.net",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "Irrelevant"
+    },
+    {
+      "program": "Featherless.ai Sponsorship",
+      "provider": "Featherless AI",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "Irrelevant"
+    },
+    {
+      "program": "Prime Intellect (Fast Compute Grants)",
+      "provider": "Prime Intellect",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "Irrelevant"
+    },
+    {
+      "program": "Koyeb for Startups",
+      "provider": "Koyeb",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "Irrelevant"
+    },
+    {
+      "program": "Gladia Startup Studio",
+      "provider": "Gladia",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "Irrelevant"
+    },
+    {
+      "program": "Murf.ai Startup Incubator",
+      "provider": "Murf AI",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "Irrelevant"
+    },
+    {
+      "program": "Denvr AI Ascend",
+      "provider": "Denvr",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "Irrelevant"
+    },
+    {
+      "program": "CloudRift AI Grant",
+      "provider": "CloudRift",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "Irrelevant"
+    },
+    {
+      "program": "Tencent Cloud Startup Program",
+      "provider": "Tencent Cloud",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "Irrelevant"
+    },
+    {
+      "program": "Fly.io for Startups",
+      "provider": "Fly.io",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "Irrelevant"
+    },
+    {
+      "program": "Nosana Grants",
+      "provider": "Nosana",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "Irrelevant"
+    },
+    {
+      "program": "STACKIT Startup Program",
+      "provider": "STACKIT (Schwarz Group)",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "Irrelevant"
+    },
+    {
+      "program": "Not yet approved by devs",
+      "provider": "",
+      "credit_amount": "",
+      "tier": "",
+      "notes": ""
+    },
+    {
+      "program": "Anthropic Anthology Fund (Menlo Ventures)",
+      "provider": "Menlo Ventures + Anthropic",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "Vadym"
+    },
+    {
+      "program": "Ramp Startup Perks",
+      "provider": "Ramp",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "platform though which you can gain access to other programs"
+    },
+    {
+      "program": "FounderPass",
+      "provider": "FounderPass",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "No"
+    },
+    {
+      "program": "Huawei Cloud Startup Program",
+      "provider": "Huawei Cloud",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "Huawei confirms that applicants must complete enterprise verification and upload Certificate of Incorporation or Business Registration Certificate (Business License)"
+    },
+    {
+      "program": "AWS Build on Trainium",
+      "provider": "Amazon",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "Olia"
+    },
+    {
+      "program": "Deepgram for Startups",
+      "provider": "Deepgram",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "Mykola"
+    },
+    {
+      "program": "NVIDIA NIM Free API",
+      "provider": "NVIDIA",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "Vadym"
+    },
+    {
+      "program": "NVIDIA DGX Cloud Credits",
+      "provider": "NVIDIA",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "Vadym"
+    },
+    {
+      "program": "NVIDIA Inception — Premier tier",
+      "provider": "NVIDIA",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "Vadym"
+    },
+    {
+      "program": "NVIDIA Inception (Gateway)",
+      "provider": "NVIDIA",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "Vadym"
     }
   ],
   "applications": [
@@ -9573,6 +9573,58 @@ window.DASHBOARD_DATA = {
     },
     {
       "id": "",
+      "company": "Celest.day",
+      "program": "Novita AI Startup Program",
+      "provider": "Novita AI",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-13",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "sitko.host",
+      "program": "Novita AI Startup Program",
+      "provider": "Novita AI",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-13",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "cofferdam.online",
+      "program": "Novita AI Startup Program",
+      "provider": "Novita AI",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-13",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "bitting.bid",
+      "program": "Novita AI Startup Program",
+      "provider": "Novita AI",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-13",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
       "company": "ledgenone.com",
       "program": "RunPod Startup Program",
       "provider": "RunPod",
@@ -10396,7 +10448,7 @@ window.DASHBOARD_DATA = {
       "program": "Crusoe Intelligence Foundry Credit Program",
       "provider": "Crusoe",
       "consultant": "Denys",
-      "status": "Applied",
+      "status": "Approved",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-04",
@@ -10526,7 +10578,7 @@ window.DASHBOARD_DATA = {
       "program": "Crusoe Intelligence Foundry Credit Program",
       "provider": "Crusoe",
       "consultant": "Denys",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-06",
@@ -10595,6 +10647,19 @@ window.DASHBOARD_DATA = {
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-09",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "hallinanstroud.bid",
+      "program": "Crusoe Intelligence Foundry Credit Program",
+      "provider": "",
+      "consultant": "",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-13",
       "date_received": null,
       "next_action": ""
     },
@@ -10977,13 +11042,78 @@ window.DASHBOARD_DATA = {
     },
     {
       "id": "",
+      "company": "joinvinci",
+      "program": "Telnyx",
+      "provider": "Telnyx",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-13",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "ringdown.space",
+      "program": "Telnyx",
+      "provider": "Telnyx",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-13",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "astragal.team",
+      "program": "Telnyx",
+      "provider": "Telnyx",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-13",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "spokenform.art",
+      "program": "Telnyx",
+      "provider": "Telnyx",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-13",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "adjournal.team",
+      "program": "Telnyx",
+      "provider": "Telnyx",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-13",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
       "company": "keelson.ink",
       "program": "LiveKit Startups",
       "provider": "LiveKit",
       "consultant": "Dariia",
-      "status": "Applied",
+      "status": "Received",
       "requested_usd": null,
-      "approved_usd": null,
+      "approved_usd": 17000.0,
       "date_applied": "2026-11-10",
       "date_received": null,
       "next_action": ""
@@ -11124,7 +11254,7 @@ window.DASHBOARD_DATA = {
       "program": "Gradium for Startups",
       "provider": "Gradium",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Received",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-11",
@@ -11137,7 +11267,7 @@ window.DASHBOARD_DATA = {
       "program": "Gradium for Startups",
       "provider": "Gradium",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Received",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-11",
@@ -11150,7 +11280,7 @@ window.DASHBOARD_DATA = {
       "program": "Gradium for Startups",
       "provider": "Gradium",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Received",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-11",
@@ -11163,7 +11293,7 @@ window.DASHBOARD_DATA = {
       "program": "Gradium for Startups",
       "provider": "Gradium",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Received",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-11",
@@ -11176,10 +11306,49 @@ window.DASHBOARD_DATA = {
       "program": "Gradium for Startups",
       "provider": "Gradium",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Received",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-12",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "keelson.ink",
+      "program": "Gradium for Startups",
+      "provider": "Gradium",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-13",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "ferrule.fit",
+      "program": "Gradium for Startups",
+      "provider": "Gradium",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-13",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "forbear.works",
+      "program": "Gradium for Startups",
+      "provider": "Gradium",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-13",
       "date_received": null,
       "next_action": ""
     },
@@ -11250,6 +11419,45 @@ window.DASHBOARD_DATA = {
     },
     {
       "id": "",
+      "company": "keelson.ink",
+      "program": "Smallest.ai Grants",
+      "provider": "Smallest.ai",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-13",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "ferrule.fit",
+      "program": "",
+      "provider": "",
+      "consultant": "",
+      "status": "Scheduled",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": null,
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "forbear.works",
+      "program": "",
+      "provider": "",
+      "consultant": "",
+      "status": "Scheduled",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": null,
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
       "company": "neptyne.tech",
       "program": "Requesty",
       "provider": "Requesty",
@@ -11284,6 +11492,45 @@ window.DASHBOARD_DATA = {
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-12",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "keelson.ink",
+      "program": "Requesty",
+      "provider": "Requesty",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-13",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "ferrule.fit",
+      "program": "Requesty",
+      "provider": "Requesty",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-13",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "forbear.works",
+      "program": "Requesty",
+      "provider": "Requesty",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-13",
       "date_received": null,
       "next_action": ""
     },
@@ -11497,6 +11744,32 @@ window.DASHBOARD_DATA = {
     },
     {
       "id": "",
+      "company": "sitko.host",
+      "program": "ElevenLabs Startup Grant",
+      "provider": "ElevenLabs",
+      "consultant": "Denys",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-13",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "tringel.pro",
+      "program": "ElevenLabs Startup Grant",
+      "provider": "ElevenLabs",
+      "consultant": "Denys",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-13",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
       "company": "kernpin.tech",
       "program": "Nebius AI Builder Program\nCompute Grants",
       "provider": "Nebius",
@@ -11544,6 +11817,71 @@ window.DASHBOARD_DATA = {
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-12",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "muniment.world",
+      "program": "Runware",
+      "provider": "Runware",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-13",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "ferrule.fit",
+      "program": "LiveKit Startups",
+      "provider": "LiveKit",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-13",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "plimsoll.live",
+      "program": "LiveKit Startups",
+      "provider": "LiveKit",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-13",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "muniment.world",
+      "program": "LiveKit Startups",
+      "provider": "LiveKit",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-13",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "understudy.fit",
+      "program": "LiveKit Startups",
+      "provider": "LiveKit",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-13",
       "date_received": null,
       "next_action": ""
     }
@@ -11733,6 +12071,10 @@ window.DASHBOARD_DATA = {
       [
         "2026-11-12",
         30
+      ],
+      [
+        "2026-11-13",
+        24
       ]
     ],
     "received": [
