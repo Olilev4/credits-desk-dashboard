@@ -1,5 +1,5 @@
 window.DASHBOARD_DATA = {
-  "generated_at": "2026-11-13 23:23 UTC",
+  "generated_at": "2026-11-14 05:36 UTC",
   "source": "Credits desk tracker (Google Sheet)",
   "overall": {
     "total_applications": 791,
