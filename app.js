@@ -115,6 +115,7 @@
     overview: document.getElementById("tab-btn-overview"),
     provider: document.getElementById("tab-btn-provider"),
     website: document.getElementById("tab-btn-website"),
+    received: document.getElementById("tab-btn-received"),
     compare: document.getElementById("tab-btn-compare"),
     programs: document.getElementById("tab-btn-programs"),
     applications: document.getElementById("tab-btn-applications"),
@@ -123,6 +124,7 @@
     overview: document.getElementById("tab-overview"),
     provider: document.getElementById("tab-provider"),
     website: document.getElementById("tab-website"),
+    received: document.getElementById("tab-received"),
     compare: document.getElementById("tab-compare"),
     programs: document.getElementById("tab-programs"),
     applications: document.getElementById("tab-applications"),
@@ -140,6 +142,7 @@
   tabButtons.overview.addEventListener("click", () => showTab("overview"));
   tabButtons.provider.addEventListener("click", () => showTab("provider"));
   tabButtons.website.addEventListener("click", () => showTab("website"));
+  tabButtons.received.addEventListener("click", () => showTab("received"));
   tabButtons.compare.addEventListener("click", () => showTab("compare"));
   tabButtons.programs.addEventListener("click", () => showTab("programs"));
   tabButtons.applications.addEventListener("click", () => showTab("applications"));
@@ -296,6 +299,7 @@
   initProviderTab();
   initCompareTab();
   initWebsiteTab();
+  initReceivedTab();
 
   function section(title, note, bodyHtml) {
     return `
@@ -1208,6 +1212,109 @@
             </table>
           </div>
         </section>`;
+    }
+
+    render("");
+  }
+
+  function initReceivedTab() {
+    const monthFilter = document.getElementById("received-month-filter");
+    const out = document.getElementById("received-root");
+
+    // Only applications that actually received credits.
+    const receivedApps = D.applications.filter((a) => a.status === "Received" && a.date_received);
+
+    // Months that have at least one received credit, newest first.
+    const monthsWithData = [...new Set(receivedApps.map((a) => monthKey(a.date_received)))].sort().reverse();
+    monthsWithData.forEach((m) => {
+      const opt = document.createElement("option");
+      opt.value = m;
+      opt.textContent = monthLabel(m);
+      monthFilter.appendChild(opt);
+    });
+
+    monthFilter.addEventListener("change", () => render(monthFilter.value));
+
+    function render(monthValue) {
+      const scopedMonths = monthValue ? [monthValue] : monthsWithData;
+
+      if (!receivedApps.length) {
+        out.innerHTML = `<p class="text-sm text-slate-500">No credits have been marked "Received" yet.</p>`;
+        return;
+      }
+
+      const sections = scopedMonths
+        .map((m) => {
+          const rowsForMonth = receivedApps
+            .filter((a) => monthKey(a.date_received) === m)
+            .slice()
+            .sort((a, b) => (b.approved_usd || 0) - (a.approved_usd || 0));
+          if (!rowsForMonth.length) return "";
+
+          // Roll up by provider within the month, since the ask is "providers
+          // that received credits, with the amount" rather than a flat log.
+          const byProvider = new Map();
+          rowsForMonth.forEach((a) => {
+            const key = a.provider || "(unknown provider)";
+            if (!byProvider.has(key)) byProvider.set(key, { provider: key, total: 0, entries: [] });
+            const bucket = byProvider.get(key);
+            bucket.total += a.approved_usd || 0;
+            bucket.entries.push(a);
+          });
+          const providerRows = [...byProvider.values()].sort((a, b) => b.total - a.total);
+          const monthTotal = rowsForMonth.reduce((s, a) => s + (a.approved_usd || 0), 0);
+
+          const providerBlocks = providerRows
+            .map((p) => {
+              const programRows = p.entries
+                .map(
+                  (a) => `
+              <tr class="border-t border-slate-200">
+                <td class="py-1.5 pr-4">${a.program || "&ndash;"}</td>
+                <td class="py-1.5 pr-4">${a.company || "&ndash;"}</td>
+                <td class="py-1.5 pr-4">${a.date_received || "&ndash;"}</td>
+                <td class="py-1.5 pr-4 text-right font-medium">${fmt$(a.approved_usd || 0)}</td>
+              </tr>`
+                )
+                .join("");
+              return `
+            <div class="mb-6">
+              <div class="flex items-baseline justify-between mb-1">
+                <h4 class="font-semibold">${p.provider}</h4>
+                <span class="text-sm font-semibold">${fmt$(p.total)}</span>
+              </div>
+              <table class="w-full text-sm">
+                <thead>
+                  <tr class="text-left text-xs uppercase tracking-wide text-slate-500 border-b border-slate-300">
+                    <th class="py-1.5 pr-4">Program</th><th class="py-1.5 pr-4">Company</th>
+                    <th class="py-1.5 pr-4">Date received</th><th class="py-1.5 pr-4 text-right">Amount</th>
+                  </tr>
+                </thead>
+                <tbody>${programRows}</tbody>
+              </table>
+            </div>`;
+            })
+            .join("");
+
+          return `
+        <section class="mb-10">
+          <div class="flex items-baseline justify-between mb-3 pb-2 border-b border-slate-300">
+            <h3 class="text-base font-semibold">${monthLabel(m)}</h3>
+            <span class="text-sm font-semibold">${fmt$(monthTotal)} across ${providerRows.length} provider${providerRows.length === 1 ? "" : "s"}</span>
+          </div>
+          ${providerBlocks}
+        </section>`;
+        })
+        .join("");
+
+      const grandTotal = scopedMonths.reduce(
+        (s, m) => s + receivedApps.filter((a) => monthKey(a.date_received) === m).reduce((s2, a) => s2 + (a.approved_usd || 0), 0),
+        0
+      );
+
+      out.innerHTML = `
+        <p class="text-sm text-slate-600 mb-6">${fmt$(grandTotal)} received${monthValue ? ` in ${monthLabel(monthValue)}` : " across all months shown"}.</p>
+        ${sections || `<p class="text-sm text-slate-500">No credits received in this period.</p>`}`;
     }
 
     render("");

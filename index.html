@@ -45,6 +45,7 @@
     <button id="tab-btn-overview" class="tab-btn text-left px-3 py-2 text-sm font-medium border-b-2 md:border-b-0 md:border-l-2 border-slate-900 text-slate-900 bg-slate-50">Overview</button>
     <button id="tab-btn-provider" class="tab-btn text-left px-3 py-2 text-sm font-medium border-b-2 md:border-b-0 md:border-l-2 border-transparent text-slate-500">By Provider</button>
     <button id="tab-btn-website" class="tab-btn text-left px-3 py-2 text-sm font-medium border-b-2 md:border-b-0 md:border-l-2 border-transparent text-slate-500">By Website</button>
+    <button id="tab-btn-received" class="tab-btn text-left px-3 py-2 text-sm font-medium border-b-2 md:border-b-0 md:border-l-2 border-transparent text-slate-500">Received by Month</button>
     <button id="tab-btn-compare" class="tab-btn text-left px-3 py-2 text-sm font-medium border-b-2 md:border-b-0 md:border-l-2 border-transparent text-slate-500">Compare</button>
     <button id="tab-btn-programs" class="tab-btn text-left px-3 py-2 text-sm font-medium border-b-2 md:border-b-0 md:border-l-2 border-transparent text-slate-500">Program Catalog</button>
     <button id="tab-btn-applications" class="tab-btn text-left px-3 py-2 text-sm font-medium border-b-2 md:border-b-0 md:border-l-2 border-transparent text-slate-500">Applications Log</button>
@@ -183,6 +184,19 @@
       </div>
     </section>
     <div id="website-root"></div>
+  </div>
+
+  <!-- Received by Month tab -->
+  <div id="tab-received" class="hidden">
+    <section class="flex flex-wrap items-end gap-3 mb-8">
+      <div>
+        <label class="block text-xs text-slate-500 mb-1" for="received-month-filter">Month</label>
+        <select id="received-month-filter" class="border border-slate-300 px-2 py-1.5 text-sm w-full md:w-56">
+          <option value="">All months</option>
+        </select>
+      </div>
+    </section>
+    <div id="received-root"></div>
   </div>
 
   <!-- Compare tab -->
