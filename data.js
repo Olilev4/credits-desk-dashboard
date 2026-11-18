@@ -1,12 +1,12 @@
 window.DASHBOARD_DATA = {
-  "generated_at": "2026-11-17 15:41 UTC",
+  "generated_at": "2026-11-18 00:44 UTC",
   "source": "Credits desk tracker (Google Sheet)",
   "overall": {
-    "total_applications": 835,
+    "total_applications": 842,
     "total_received_usd": 1582080.0,
     "open_pipeline_usd": 80000.0,
     "status_counts": {
-      "Applied": 493,
+      "Applied": 500,
       "Received": 153,
       "Blocked / unable to apply": 3,
       "Action required": 5,
@@ -74,8 +74,8 @@ window.DASHBOARD_DATA = {
       "Contact email": "yuliia.pankiv@joinvinci.ai",
       "Stage": "",
       "Account owner": "",
-      "Applications": "10",
-      "Open": "6",
+      "Applications": "11",
+      "Open": "7",
       "Approved $": "$1,000",
       "Received $": "$1,000",
       "Notes": ""
@@ -86,8 +86,8 @@ window.DASHBOARD_DATA = {
       "Contact email": "vlad.tyshchenko@tuski.ai",
       "Stage": "",
       "Account owner": "",
-      "Applications": "8",
-      "Open": "5",
+      "Applications": "9",
+      "Open": "6",
       "Approved $": "$11,000",
       "Received $": "$11,000",
       "Notes": ""
@@ -793,7 +793,7 @@ window.DASHBOARD_DATA = {
       "provider": "Regolo.ai (Seeweb)",
       "credit_amount": "",
       "tier": "",
-      "notes": "Luisa"
+      "notes": "Not yet"
     },
     {
       "program": "Crusoe Intelligence Foundry",
@@ -12456,6 +12456,97 @@ window.DASHBOARD_DATA = {
       "date_applied": "2026-11-17",
       "date_received": null,
       "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "tamis.services",
+      "program": "Outscale for Entrepreneurs",
+      "provider": "3DS Outscale (Dassault)",
+      "consultant": "Luisa",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-17",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "corrigenda.club",
+      "program": "Outscale for Entrepreneurs",
+      "provider": "3DS Outscale (Dassault)",
+      "consultant": "Luisa",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-17",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "bitting.bid",
+      "program": "Outscale for Entrepreneurs",
+      "provider": "3DS Outscale (Dassault)",
+      "consultant": "Luisa",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-17",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "termijn.space",
+      "program": "Outscale for Entrepreneurs",
+      "provider": "3DS Outscale (Dassault)",
+      "consultant": "Luisa",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-17",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "mittkurs.live",
+      "program": "Outscale for Entrepreneurs",
+      "provider": "3DS Outscale (Dassault)",
+      "consultant": "Luisa",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-17",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "tuski",
+      "program": "CoreWeave Arena",
+      "provider": "CoreWeave",
+      "consultant": "Luisa",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-17",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "joinvinci",
+      "program": "CoreWeave Arena",
+      "provider": "CoreWeave",
+      "consultant": "Luisa",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-17",
+      "date_received": null,
+      "next_action": ""
     }
   ],
   "timeseries": {
@@ -12654,7 +12745,7 @@ window.DASHBOARD_DATA = {
       ],
       [
         "2026-11-17",
-        31
+        38
       ]
     ],
     "received": [
