@@ -1,12 +1,12 @@
 window.DASHBOARD_DATA = {
-  "generated_at": "2026-11-18 15:21 UTC",
+  "generated_at": "2026-11-19 00:01 UTC",
   "source": "Credits desk tracker (Google Sheet)",
   "overall": {
-    "total_applications": 872,
+    "total_applications": 876,
     "total_received_usd": 1582080.0,
     "open_pipeline_usd": 80000.0,
     "status_counts": {
-      "Applied": 526,
+      "Applied": 531,
       "Received": 153,
       "Blocked / unable to apply": 3,
       "Action required": 5,
@@ -16,7 +16,7 @@ window.DASHBOARD_DATA = {
       "Rejected by NVIDIA": 19,
       "Approved": 5,
       "Scheduled": 3,
-      "": 2
+      "": 1
     }
   },
   "companies": [
@@ -12927,14 +12927,66 @@ window.DASHBOARD_DATA = {
     },
     {
       "id": "",
-      "company": "adjournal.team",
+      "company": "cahier.ltd",
       "program": "Outscale for Entrepreneurs",
       "provider": "3DS Outscale (Dassault)",
-      "consultant": "",
-      "status": "",
+      "consultant": "Luisa",
+      "status": "Applied",
       "requested_usd": null,
       "approved_usd": null,
-      "date_applied": null,
+      "date_applied": "2026-11-18",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "keelson.ink",
+      "program": "Outscale for Entrepreneurs",
+      "provider": "3DS Outscale (Dassault)",
+      "consultant": "Luisa",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-18",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "muntin.online",
+      "program": "Outscale for Entrepreneurs",
+      "provider": "3DS Outscale (Dassault)",
+      "consultant": "Luisa",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-18",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "recension.bond",
+      "program": "Outscale for Entrepreneurs",
+      "provider": "3DS Outscale (Dassault)",
+      "consultant": "Luisa",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-18",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "ferrule.fit",
+      "program": "Outscale for Entrepreneurs",
+      "provider": "3DS Outscale (Dassault)",
+      "consultant": "Luisa",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-18",
       "date_received": null,
       "next_action": ""
     }
@@ -13139,7 +13191,7 @@ window.DASHBOARD_DATA = {
       ],
       [
         "2026-11-18",
-        29
+        34
       ]
     ],
     "received": [
