@@ -1,21 +1,21 @@
 window.DASHBOARD_DATA = {
-  "generated_at": "2026-11-19 00:01 UTC",
+  "generated_at": "2026-11-19 15:27 UTC",
   "source": "Credits desk tracker (Google Sheet)",
   "overall": {
-    "total_applications": 876,
-    "total_received_usd": 1582080.0,
+    "total_applications": 891,
+    "total_received_usd": 1604680.0,
     "open_pipeline_usd": 80000.0,
     "status_counts": {
-      "Applied": 531,
-      "Received": 153,
+      "Applied": 535,
+      "Received": 155,
       "Blocked / unable to apply": 3,
       "Action required": 5,
       "Pending": 2,
-      "Rejected": 153,
+      "Rejected": 161,
       "Blocked": 1,
       "Rejected by NVIDIA": 19,
       "Approved": 5,
-      "Scheduled": 3,
+      "Scheduled": 4,
       "": 1
     }
   },
@@ -75,9 +75,9 @@ window.DASHBOARD_DATA = {
       "Stage": "",
       "Account owner": "",
       "Applications": "11",
-      "Open": "7",
-      "Approved $": "$1,000",
-      "Received $": "$1,000",
+      "Open": "6",
+      "Approved $": "$18,000",
+      "Received $": "$18,000",
       "Notes": ""
     },
     {
@@ -2117,9 +2117,9 @@ window.DASHBOARD_DATA = {
       "consultant": "Mykhailo",
       "status": "Applied",
       "requested_usd": null,
-      "approved_usd": null,
+      "approved_usd": 100000.0,
       "date_applied": "2026-09-22",
-      "date_received": null,
+      "date_received": "2026-11-18",
       "next_action": "Wait for decision"
     },
     {
@@ -5005,7 +5005,7 @@ window.DASHBOARD_DATA = {
       "requested_usd": null,
       "approved_usd": 2500.0,
       "date_applied": "2026-11-11",
-      "date_received": null,
+      "date_received": "2026-11-11",
       "next_action": ""
     },
     {
@@ -5018,7 +5018,7 @@ window.DASHBOARD_DATA = {
       "requested_usd": null,
       "approved_usd": 10000.0,
       "date_applied": "2026-11-11",
-      "date_received": null,
+      "date_received": "2026-11-11",
       "next_action": ""
     },
     {
@@ -5031,7 +5031,7 @@ window.DASHBOARD_DATA = {
       "requested_usd": null,
       "approved_usd": 2500.0,
       "date_applied": "2026-11-12",
-      "date_received": null,
+      "date_received": "2026-11-13",
       "next_action": ""
     },
     {
@@ -5044,7 +5044,7 @@ window.DASHBOARD_DATA = {
       "requested_usd": null,
       "approved_usd": 10000.0,
       "date_applied": "2026-11-12",
-      "date_received": null,
+      "date_received": "2026-11-13",
       "next_action": ""
     },
     {
@@ -5057,7 +5057,7 @@ window.DASHBOARD_DATA = {
       "requested_usd": null,
       "approved_usd": 2500.0,
       "date_applied": "2026-11-12",
-      "date_received": null,
+      "date_received": "2026-11-13",
       "next_action": ""
     },
     {
@@ -5770,9 +5770,9 @@ window.DASHBOARD_DATA = {
       "consultant": "Mykhailo",
       "status": "Applied",
       "requested_usd": null,
-      "approved_usd": null,
+      "approved_usd": 100000.0,
       "date_applied": "2026-09-28",
-      "date_received": null,
+      "date_received": "2026-11-18",
       "next_action": "Wait for decision"
     },
     {
@@ -5963,11 +5963,11 @@ window.DASHBOARD_DATA = {
       "program": "ElevenLabs Startup Grant",
       "provider": "ElevenLabs",
       "consultant": "Denys",
-      "status": "Applied",
+      "status": "Received",
       "requested_usd": null,
-      "approved_usd": null,
+      "approved_usd": 5600.0,
       "date_applied": "2026-10-29",
-      "date_received": null,
+      "date_received": "2026-11-19",
       "next_action": ""
     },
     {
@@ -7046,7 +7046,7 @@ window.DASHBOARD_DATA = {
       "requested_usd": null,
       "approved_usd": 1000.0,
       "date_applied": "2026-10-07",
-      "date_received": null,
+      "date_received": "2026-10-28",
       "next_action": ""
     },
     {
@@ -7382,9 +7382,9 @@ window.DASHBOARD_DATA = {
       "consultant": "Yuliia",
       "status": "Approved",
       "requested_usd": null,
-      "approved_usd": 1801.0,
+      "approved_usd": 180.0,
       "date_applied": "2026-10-12",
-      "date_received": null,
+      "date_received": "2026-10-28",
       "next_action": ""
     },
     {
@@ -9256,7 +9256,7 @@ window.DASHBOARD_DATA = {
       "requested_usd": null,
       "approved_usd": 255.0,
       "date_applied": "2026-10-28",
-      "date_received": null,
+      "date_received": "2026-11-17",
       "next_action": ""
     },
     {
@@ -10203,9 +10203,9 @@ window.DASHBOARD_DATA = {
       "consultant": "Luisa",
       "status": "Approved",
       "requested_usd": null,
-      "approved_usd": 500255.0,
+      "approved_usd": 755.0,
       "date_applied": "2026-11-02",
-      "date_received": null,
+      "date_received": "2026-11-17",
       "next_action": ""
     },
     {
@@ -10487,7 +10487,7 @@ window.DASHBOARD_DATA = {
       "program": "Crusoe Intelligence Foundry Credit Program",
       "provider": "Crusoe",
       "consultant": "Denys",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-04",
@@ -10686,6 +10686,19 @@ window.DASHBOARD_DATA = {
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-13",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "bearingtree.tax",
+      "program": "Crusoe Intelligence Foundry Credit Program",
+      "provider": "Crusoe",
+      "consultant": "Denys",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-19",
       "date_received": null,
       "next_action": ""
     },
@@ -11211,6 +11224,32 @@ window.DASHBOARD_DATA = {
     },
     {
       "id": "",
+      "company": "recension.bond",
+      "program": "Telnyx",
+      "provider": "Telnyx",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-19",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "muntin.online",
+      "program": "Telnyx",
+      "provider": "Telnyx",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-19",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
       "company": "keelson.ink",
       "program": "LiveKit Startups",
       "provider": "LiveKit",
@@ -11219,7 +11258,7 @@ window.DASHBOARD_DATA = {
       "requested_usd": 17000.0,
       "approved_usd": 17000.0,
       "date_applied": "2026-11-10",
-      "date_received": null,
+      "date_received": "2026-11-12",
       "next_action": ""
     },
     {
@@ -11232,7 +11271,7 @@ window.DASHBOARD_DATA = {
       "requested_usd": null,
       "approved_usd": 17000.0,
       "date_applied": "2026-11-12",
-      "date_received": null,
+      "date_received": "2026-11-13",
       "next_action": ""
     },
     {
@@ -11627,6 +11666,45 @@ window.DASHBOARD_DATA = {
     },
     {
       "id": "",
+      "company": "sitko.host",
+      "program": "Smallest.ai Grants",
+      "provider": "Smallest.ai",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-19",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "pirca.co",
+      "program": "Smallest.ai Grants",
+      "provider": "Smallest.ai",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-19",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "cofferdam.online",
+      "program": "Smallest.ai Grants",
+      "provider": "Smallest.ai",
+      "consultant": "Yuliia",
+      "status": "Scheduled",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": null,
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
       "company": "neptyne.tech",
       "program": "Requesty",
       "provider": "Requesty",
@@ -11882,6 +11960,71 @@ window.DASHBOARD_DATA = {
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-18",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "bearingtree.tax",
+      "program": "Requesty",
+      "provider": "Requesty",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-19",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "dailies.social",
+      "program": "Requesty",
+      "provider": "Requesty",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-19",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "tallystick.digital",
+      "program": "Requesty",
+      "provider": "Requesty",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-19",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "titleblock.watch",
+      "program": "Requesty",
+      "provider": "Requesty",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-19",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "sounding.world",
+      "program": "Requesty",
+      "provider": "Requesty",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-19",
       "date_received": null,
       "next_action": ""
     },
@@ -12272,7 +12415,7 @@ window.DASHBOARD_DATA = {
       "requested_usd": 17000.0,
       "approved_usd": 17000.0,
       "date_applied": "2026-11-13",
-      "date_received": null,
+      "date_received": "2026-11-16",
       "next_action": ""
     },
     {
@@ -12294,7 +12437,7 @@ window.DASHBOARD_DATA = {
       "program": "LiveKit Startups",
       "provider": "LiveKit",
       "consultant": "Dariia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-16",
@@ -12320,7 +12463,7 @@ window.DASHBOARD_DATA = {
       "program": "LiveKit Startups",
       "provider": "LiveKit",
       "consultant": "Dariia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-16",
@@ -12563,15 +12706,28 @@ window.DASHBOARD_DATA = {
     },
     {
       "id": "",
+      "company": "bearingtree.tax",
+      "program": "Brev credits (for NVIDIA Inception members)",
+      "provider": "NVIDIA",
+      "consultant": "Denys",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-19",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
       "company": "joinvinci",
       "program": "LiveKit Startups",
       "provider": "LiveKit",
       "consultant": "Dariia",
-      "status": "Applied",
+      "status": "Received",
       "requested_usd": null,
-      "approved_usd": null,
+      "approved_usd": 17000.0,
       "date_applied": "2026-11-17",
-      "date_received": null,
+      "date_received": "2026-11-19",
       "next_action": ""
     },
     {
@@ -12580,7 +12736,7 @@ window.DASHBOARD_DATA = {
       "program": "LiveKit Startups",
       "provider": "LiveKit",
       "consultant": "Dariia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-17",
@@ -12619,7 +12775,7 @@ window.DASHBOARD_DATA = {
       "program": "LiveKit Startups",
       "provider": "LiveKit",
       "consultant": "Dariia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-17",
@@ -12836,6 +12992,45 @@ window.DASHBOARD_DATA = {
     },
     {
       "id": "",
+      "company": "watchglass.health",
+      "program": "AWS Activate Portfolio",
+      "provider": "AWS",
+      "consultant": "Denys",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-19",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "intervalo.pro",
+      "program": "AWS Activate Portfolio",
+      "provider": "AWS",
+      "consultant": "Denys",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-19",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "nameboard.watch",
+      "program": "AWS Activate Portfolio",
+      "provider": "",
+      "consultant": "Denys",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-19",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
       "company": "sitko.host",
       "program": "Runware",
       "provider": "Runware",
@@ -12879,7 +13074,7 @@ window.DASHBOARD_DATA = {
       "program": "LiveKit Startups",
       "provider": "LiveKit",
       "consultant": "Dariia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-18",
@@ -12892,7 +13087,7 @@ window.DASHBOARD_DATA = {
       "program": "LiveKit Startups",
       "provider": "LiveKit",
       "consultant": "Dariia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-18",
@@ -12918,7 +13113,7 @@ window.DASHBOARD_DATA = {
       "program": "LiveKit Startups",
       "provider": "LiveKit",
       "consultant": "Dariia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-18",
@@ -13192,6 +13387,10 @@ window.DASHBOARD_DATA = {
       [
         "2026-11-18",
         34
+      ],
+      [
+        "2026-11-19",
+        14
       ]
     ],
     "received": [
@@ -13269,7 +13468,7 @@ window.DASHBOARD_DATA = {
       ],
       [
         "2026-10-28",
-        105000.0
+        106000.0
       ],
       [
         "2026-10-30",
@@ -13297,11 +13496,27 @@ window.DASHBOARD_DATA = {
       ],
       [
         "2026-11-11",
-        52525.0
+        65025.0
+      ],
+      [
+        "2026-11-12",
+        17000.0
+      ],
+      [
+        "2026-11-13",
+        32000.0
+      ],
+      [
+        "2026-11-16",
+        17000.0
       ],
       [
         "2026-11-17",
         25000.0
+      ],
+      [
+        "2026-11-19",
+        22600.0
       ]
     ]
   }
