@@ -3,6 +3,16 @@
   const D = window.DASHBOARD_DATA;
   const fmt$ = (n) => "$" + Number(n || 0).toLocaleString("en-US", { maximumFractionDigits: 0 });
 
+  // chartjs-plugin-datalabels auto-registers itself globally the moment its
+  // CDN script loads. Passing it again as a per-chart plugin (which the
+  // Provider-activity chart used to do) makes Chart.js throw "plugin already
+  // registered" and silently breaks that chart's every re-render. Fix: leave
+  // it globally registered but OFF by default, and opt in per-chart via
+  // options.plugins.datalabels instead of the plugins: [...] array.
+  if (window.Chart && window.ChartDataLabels) {
+    window.Chart.defaults.set("plugins.datalabels", { display: false });
+  }
+
   document.getElementById("generated-at").textContent = D.generated_at;
 
   // Point "Update data now" at this repo's GitHub Actions page. Works when
@@ -623,6 +633,7 @@
           plugins: {
             legend: { display: true, position: "bottom", labels: { boxWidth: 10 } },
             datalabels: {
+              display: true,
               anchor: "end",
               align: "end",
               color: "#0f172a",
@@ -635,7 +646,6 @@
             y: { grid: { display: false } },
           },
         },
-        plugins: window.ChartDataLabels ? [window.ChartDataLabels] : [],
       });
     }
 
