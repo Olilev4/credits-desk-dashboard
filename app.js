@@ -296,6 +296,7 @@
 
   refreshKPIs();
   initTrendChart();
+  initProviderActivityChart();
   initProviderTab();
   initCompareTab();
   initWebsiteTab();
@@ -525,6 +526,128 @@
       period = newPeriod;
       render();
     };
+
+    render();
+  }
+
+  function initProviderActivityChart() {
+    const monthSel = document.getElementById("provider-activity-month");
+    const emptyMsg = document.getElementById("provider-activity-empty");
+    const canvas = document.getElementById("provider-activity-chart");
+    const wrap = document.getElementById("provider-activity-chart-wrap");
+    let mode = "count"; // "count" | "amount"
+    let chart;
+
+    // Reuse the same continuous month list built earlier for the Overview period picker.
+    months.forEach((m) => {
+      const opt = document.createElement("option");
+      opt.value = m;
+      opt.textContent = monthLabel(m);
+      monthSel.appendChild(opt);
+    });
+    // Default to the most recent month that actually has data, not an empty future month.
+    const defaultMonth = seenMonths.length ? seenMonths[seenMonths.length - 1] : months[months.length - 1];
+    monthSel.value = defaultMonth;
+
+    function render() {
+      const m = monthSel.value;
+      const inMonth = (d) => d && d.slice(0, 7) === m;
+
+      const byProvider = new Map();
+      D.applications.forEach((a) => {
+        if (!a.provider) return;
+        if (!byProvider.has(a.provider)) {
+          byProvider.set(a.provider, { appliedCount: 0, appliedUsd: 0, receivedCount: 0, receivedUsd: 0 });
+        }
+        const b = byProvider.get(a.provider);
+        if (inMonth(a.date_applied)) {
+          b.appliedCount += 1;
+          b.appliedUsd += a.requested_usd || 0;
+        }
+        if (a.status === "Received" && inMonth(a.date_received)) {
+          b.receivedCount += 1;
+          b.receivedUsd += a.approved_usd || 0;
+        }
+      });
+
+      const rows = [...byProvider.entries()]
+        .map(([provider, b]) => ({
+          provider,
+          applied: mode === "count" ? b.appliedCount : b.appliedUsd,
+          received: mode === "count" ? b.receivedCount : b.receivedUsd,
+          hasActivity: b.appliedCount > 0 || b.receivedCount > 0,
+        }))
+        .filter((r) => r.hasActivity)
+        .sort((a, b) => b.applied + b.received - (a.applied + a.received));
+
+      if (chart) {
+        chart.destroy();
+        chart = null;
+      }
+
+      if (!rows.length) {
+        canvas.classList.add("hidden");
+        emptyMsg.classList.remove("hidden");
+        return;
+      }
+      canvas.classList.remove("hidden");
+      emptyMsg.classList.add("hidden");
+
+      // Horizontal bars need enough vertical room per provider row (2 bars each).
+      wrap.style.height = `${Math.max(120, rows.length * 56 + 40)}px`;
+
+      const labels = rows.map((r) => r.provider);
+      const fmtVal = (v) => (mode === "amount" ? fmt$(v) : Number(v).toLocaleString());
+
+      chart = new Chart(canvas, {
+        type: "bar",
+        data: {
+          labels,
+          datasets: [
+            {
+              label: mode === "amount" ? "Requested $ (applied)" : "Applications submitted",
+              data: rows.map((r) => r.applied),
+              backgroundColor: "#0f766e",
+              maxBarThickness: 18,
+            },
+            {
+              label: mode === "amount" ? "Approved $ (received)" : "Credits received (count)",
+              data: rows.map((r) => r.received),
+              backgroundColor: "#5eead4",
+              maxBarThickness: 18,
+            },
+          ],
+        },
+        options: {
+          indexAxis: "y",
+          plugins: {
+            legend: { display: true, position: "bottom", labels: { boxWidth: 10 } },
+            datalabels: {
+              anchor: "end",
+              align: "end",
+              color: "#0f172a",
+              font: { size: 11, weight: "600" },
+              formatter: (v) => (v ? fmtVal(v) : ""),
+            },
+          },
+          scales: {
+            x: { beginAtZero: true, grid: { color: "#f1f1f1" } },
+            y: { grid: { display: false } },
+          },
+        },
+        plugins: window.ChartDataLabels ? [window.ChartDataLabels] : [],
+      });
+    }
+
+    monthSel.addEventListener("change", render);
+    document.querySelectorAll(".provider-activity-mode-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".provider-activity-mode-btn").forEach((b) => b.classList.remove("bg-slate-900", "text-white"));
+        btn.classList.add("bg-slate-900", "text-white");
+        mode = btn.dataset.mode;
+        render();
+      });
+    });
 
     render();
   }

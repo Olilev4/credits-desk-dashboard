@@ -6,6 +6,7 @@
 <title>Credits Desk Dashboard</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
 <script>
   // Cache-bust data.js so a manual "Update data" refresh (or any reload) never
   // serves a stale copy from the browser's or GitHub Pages' CDN cache.
@@ -136,6 +137,28 @@
     </div>
     <canvas id="trend-chart" height="90"></canvas>
     <p class="text-xs text-slate-500 mt-2">Based on Date applied / Date received in the Applications log. Gaps mean no value was recorded that day, not zero.</p>
+  </section>
+
+  <!-- Provider activity by month -->
+  <section class="mb-12">
+    <div class="flex flex-wrap items-start justify-between gap-3 mb-4">
+      <div>
+        <h2 class="text-lg font-semibold">Provider activity by month</h2>
+        <p class="text-sm text-slate-600">Providers we applied to and/or received credits from in the selected month. Providers with no activity that month are omitted.</p>
+      </div>
+      <div class="flex items-center gap-3 no-print">
+        <select id="provider-activity-month" class="border border-slate-300 px-2 py-1.5 text-sm">
+        </select>
+        <div class="flex border border-slate-300 overflow-hidden text-sm">
+          <button class="provider-activity-mode-btn px-3 py-1.5 bg-slate-900 text-white" data-mode="count">Count</button>
+          <button class="provider-activity-mode-btn px-3 py-1.5" data-mode="amount">$ Amount</button>
+        </div>
+      </div>
+    </div>
+    <div id="provider-activity-chart-wrap">
+      <canvas id="provider-activity-chart"></canvas>
+    </div>
+    <p id="provider-activity-empty" class="text-sm text-slate-500 hidden">No applications or received credits in this month.</p>
   </section>
 
   </div>
