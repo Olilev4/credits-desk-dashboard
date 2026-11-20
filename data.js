@@ -1,13 +1,13 @@
 window.DASHBOARD_DATA = {
-  "generated_at": "2026-11-20 00:24 UTC",
+  "generated_at": "2026-11-20 15:04 UTC",
   "source": "Credits desk tracker (Google Sheet)",
   "overall": {
-    "total_applications": 891,
-    "total_received_usd": 1604680.0,
+    "total_applications": 900,
+    "total_received_usd": 1636680.0,
     "open_pipeline_usd": 80000.0,
     "status_counts": {
-      "Applied": 535,
-      "Received": 155,
+      "Applied": 543,
+      "Received": 157,
       "Blocked / unable to apply": 3,
       "Action required": 5,
       "Pending": 2,
@@ -15,7 +15,7 @@ window.DASHBOARD_DATA = {
       "Blocked": 1,
       "Rejected by NVIDIA": 19,
       "Approved": 5,
-      "Scheduled": 4,
+      "Scheduled": 3,
       "": 1
     }
   },
@@ -87,9 +87,9 @@ window.DASHBOARD_DATA = {
       "Stage": "",
       "Account owner": "",
       "Applications": "9",
-      "Open": "6",
-      "Approved $": "$11,000",
-      "Received $": "$11,000",
+      "Open": "5",
+      "Approved $": "$41,000",
+      "Received $": "$41,000",
       "Notes": ""
     },
     {
@@ -10292,11 +10292,11 @@ window.DASHBOARD_DATA = {
       "program": "xAI Grok",
       "provider": "Grok",
       "consultant": "Dariia",
-      "status": "Applied",
+      "status": "Received",
       "requested_usd": null,
-      "approved_usd": null,
+      "approved_usd": 30000.0,
       "date_applied": "2026-11-03",
-      "date_received": null,
+      "date_received": "2026-11-20",
       "next_action": ""
     },
     {
@@ -11250,6 +11250,32 @@ window.DASHBOARD_DATA = {
     },
     {
       "id": "",
+      "company": "rangeholder.pro",
+      "program": "Telnyx",
+      "provider": "Telnyx",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-20",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "cofferdam.online",
+      "program": "Telnyx",
+      "provider": "Telnyx",
+      "consultant": "Yuliia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-20",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
       "company": "keelson.ink",
       "program": "LiveKit Startups",
       "provider": "LiveKit",
@@ -11696,7 +11722,7 @@ window.DASHBOARD_DATA = {
       "program": "Smallest.ai Grants",
       "provider": "Smallest.ai",
       "consultant": "Yuliia",
-      "status": "Scheduled",
+      "status": "Applied",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": null,
@@ -12719,6 +12745,19 @@ window.DASHBOARD_DATA = {
     },
     {
       "id": "",
+      "company": "recorrida.live",
+      "program": "Brev credits (for NVIDIA Inception members)",
+      "provider": "NVIDIA",
+      "consultant": "Denys",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-20",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
       "company": "joinvinci",
       "program": "LiveKit Startups",
       "provider": "LiveKit",
@@ -13184,6 +13223,84 @@ window.DASHBOARD_DATA = {
       "date_applied": "2026-11-18",
       "date_received": null,
       "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "rangeholder.pro",
+      "program": "xAI Grok",
+      "provider": "Grok",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-20",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "pintle.cloud",
+      "program": "xAI Grok",
+      "provider": "Grok",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-20",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "tringel.pro",
+      "program": "xAI Grok",
+      "provider": "Grok",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-20",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "sitko.host",
+      "program": "xAI Grok",
+      "provider": "Grok",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-20",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "pirca.co",
+      "program": "xAI Grok",
+      "provider": "Grok",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-20",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "Celest.day",
+      "program": "Google for Startups Cloud — AI-first tier",
+      "provider": "Google",
+      "consultant": "Mykhailo",
+      "status": "Received",
+      "requested_usd": null,
+      "approved_usd": 2000.0,
+      "date_applied": null,
+      "date_received": "2026-11-20",
+      "next_action": ""
     }
   ],
   "timeseries": {
@@ -13391,6 +13508,10 @@ window.DASHBOARD_DATA = {
       [
         "2026-11-19",
         14
+      ],
+      [
+        "2026-11-20",
+        8
       ]
     ],
     "received": [
@@ -13517,6 +13638,10 @@ window.DASHBOARD_DATA = {
       [
         "2026-11-19",
         22600.0
+      ],
+      [
+        "2026-11-20",
+        32000.0
       ]
     ]
   }
