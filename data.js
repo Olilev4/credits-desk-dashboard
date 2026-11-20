@@ -1,12 +1,12 @@
 window.DASHBOARD_DATA = {
-  "generated_at": "2026-11-20 15:04 UTC",
+  "generated_at": "2026-11-20 23:47 UTC",
   "source": "Credits desk tracker (Google Sheet)",
   "overall": {
-    "total_applications": 900,
+    "total_applications": 905,
     "total_received_usd": 1636680.0,
     "open_pipeline_usd": 80000.0,
     "status_counts": {
-      "Applied": 543,
+      "Applied": 547,
       "Received": 157,
       "Blocked / unable to apply": 3,
       "Action required": 5,
@@ -14,7 +14,7 @@ window.DASHBOARD_DATA = {
       "Rejected": 161,
       "Blocked": 1,
       "Rejected by NVIDIA": 19,
-      "Approved": 5,
+      "Approved": 6,
       "Scheduled": 3,
       "": 1
     }
@@ -74,9 +74,9 @@ window.DASHBOARD_DATA = {
       "Contact email": "yuliia.pankiv@joinvinci.ai",
       "Stage": "",
       "Account owner": "",
-      "Applications": "11",
+      "Applications": "12",
       "Open": "6",
-      "Approved $": "$18,000",
+      "Approved $": "$18,180",
       "Received $": "$18,000",
       "Notes": ""
     },
@@ -793,7 +793,7 @@ window.DASHBOARD_DATA = {
       "provider": "Regolo.ai (Seeweb)",
       "credit_amount": "",
       "tier": "",
-      "notes": "Not yet"
+      "notes": "Luisa"
     },
     {
       "program": "Crusoe Intelligence Foundry",
@@ -7250,9 +7250,9 @@ window.DASHBOARD_DATA = {
       "program": "Fish Audio Startup Program",
       "provider": "Fish Audio Startup Program",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Approved",
       "requested_usd": null,
-      "approved_usd": null,
+      "approved_usd": 180.0,
       "date_applied": "2026-10-08",
       "date_received": null,
       "next_action": ""
@@ -13301,6 +13301,71 @@ window.DASHBOARD_DATA = {
       "date_applied": null,
       "date_received": "2026-11-20",
       "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "downclimb.ink",
+      "program": "Outscale for Entrepreneurs",
+      "provider": "3DS Outscale (Dassault)",
+      "consultant": "Luisa",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-20",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "cotejo.club",
+      "program": "Outscale for Entrepreneurs",
+      "provider": "3DS Outscale (Dassault)",
+      "consultant": "Luisa",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-20",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "afterscan.fit",
+      "program": "Outscale for Entrepreneurs",
+      "provider": "3DS Outscale (Dassault)",
+      "consultant": "Luisa",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-20",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "joinvinci",
+      "program": "Outscale for Entrepreneurs",
+      "provider": "3DS Outscale (Dassault)",
+      "consultant": "Luisa",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-20",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "ledgenone.com",
+      "program": "Regolo.ai Builder Program",
+      "provider": "Regolo.ai (Seeweb)",
+      "consultant": "Luisa",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-20",
+      "date_received": null,
+      "next_action": ""
     }
   ],
   "timeseries": {
@@ -13511,7 +13576,7 @@ window.DASHBOARD_DATA = {
       ],
       [
         "2026-11-20",
-        8
+        13
       ]
     ],
     "received": [
