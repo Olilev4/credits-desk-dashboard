@@ -1,17 +1,17 @@
 window.DASHBOARD_DATA = {
-  "generated_at": "2026-11-23 06:35 UTC",
+  "generated_at": "2026-11-23 23:36 UTC",
   "source": "Credits desk tracker (Google Sheet)",
   "overall": {
-    "total_applications": 905,
-    "total_received_usd": 1636680.0,
+    "total_applications": 912,
+    "total_received_usd": 1696680.0,
     "open_pipeline_usd": 80000.0,
     "status_counts": {
-      "Applied": 547,
-      "Received": 157,
+      "Applied": 549,
+      "Received": 159,
       "Blocked / unable to apply": 3,
       "Action required": 5,
       "Pending": 2,
-      "Rejected": 161,
+      "Rejected": 164,
       "Blocked": 1,
       "Rejected by NVIDIA": 19,
       "Approved": 6,
@@ -810,6 +810,111 @@ window.DASHBOARD_DATA = {
       "notes": "Denys"
     },
     {
+      "program": "EuroHPC AI Factories (Industrial Innovation access)",
+      "provider": "",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "yes"
+    },
+    {
+      "program": "Geodd Startup Credits",
+      "provider": "",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "Luisa"
+    },
+    {
+      "program": "Sail for Startups",
+      "provider": "",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "yes"
+    },
+    {
+      "program": "FlexAI Startup Program",
+      "provider": "",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "yes"
+    },
+    {
+      "program": "Wollnut for Startups",
+      "provider": "",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "yes"
+    },
+    {
+      "program": "GMI Cloud SCALE",
+      "provider": "",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "yes"
+    },
+    {
+      "program": "World Actions for Startups",
+      "provider": "",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "Luisa"
+    },
+    {
+      "program": "Nirvana Labs Startup Credits",
+      "provider": "",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "yes"
+    },
+    {
+      "program": "Wiro for Startups",
+      "provider": "",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "yes"
+    },
+    {
+      "program": "Modal for Builders",
+      "provider": "",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "yes"
+    },
+    {
+      "program": "Lightning AI free GPU hours",
+      "provider": "",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "yes"
+    },
+    {
+      "program": "Vercel X",
+      "provider": "",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "yes"
+    },
+    {
+      "program": "AMD AI Start Up Program",
+      "provider": "",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "yes"
+    },
+    {
+      "program": "GreenAI Launch",
+      "provider": "",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "Luisa"
+    },
+    {
+      "program": "Fluidstack x NVIDIA Inception",
+      "provider": "",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "have to apply from NVIDIA Inception"
+    },
+    {
       "program": "Algolia",
       "provider": "Algolia",
       "credit_amount": "",
@@ -1517,6 +1622,76 @@ window.DASHBOARD_DATA = {
       "notes": "fail to find an active program"
     },
     {
+      "program": "Parallel for Startups",
+      "provider": "",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "devs marked it as No"
+    },
+    {
+      "program": "Zoom AI Launchpad",
+      "provider": "",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "devs marked it as No"
+    },
+    {
+      "program": "PyAI for Startups",
+      "provider": "",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "devs marked it as No"
+    },
+    {
+      "program": "RunInfra for Startups",
+      "provider": "",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "devs marked it as No"
+    },
+    {
+      "program": "Cartesia for Startups",
+      "provider": "",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "devs marked it as No"
+    },
+    {
+      "program": "Future AGI Startup Program",
+      "provider": "",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "devs marked it as No"
+    },
+    {
+      "program": "Exa for Startups",
+      "provider": "",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "devs marked it as No"
+    },
+    {
+      "program": "You.com for Startups",
+      "provider": "",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "devs marked it as No"
+    },
+    {
+      "program": "Nebius Physical AI Living Lab",
+      "provider": "",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "already appled for such program"
+    },
+    {
+      "program": "MongoDB for Startups (direct)",
+      "provider": "",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "already appled for such program"
+    },
+    {
       "program": "Not yet approved by devs",
       "provider": "",
       "credit_amount": "",
@@ -1603,7 +1778,7 @@ window.DASHBOARD_DATA = {
   ],
   "applications": [
     {
-      "id": "A0001",
+      "id": "",
       "company": "thegiraffe",
       "program": "Scaleway Startup Program",
       "provider": "Scaleway",
@@ -1616,7 +1791,7 @@ window.DASHBOARD_DATA = {
       "next_action": "Wait for Scaleway decision; chase after 14 days"
     },
     {
-      "id": "A0002",
+      "id": "",
       "company": "parley",
       "program": "Scaleway Startup Program",
       "provider": "Scaleway",
@@ -9096,11 +9271,11 @@ window.DASHBOARD_DATA = {
       "program": "xAI Grok",
       "provider": "Grok",
       "consultant": "Olha",
-      "status": "Applied",
+      "status": "Received",
       "requested_usd": null,
-      "approved_usd": null,
+      "approved_usd": 30000.0,
       "date_applied": "2026-10-26",
-      "date_received": null,
+      "date_received": "2026-11-23",
       "next_action": ""
     },
     {
@@ -9109,11 +9284,11 @@ window.DASHBOARD_DATA = {
       "program": "xAI Grok",
       "provider": "Grok",
       "consultant": "Dariia",
-      "status": "Applied",
+      "status": "Received",
       "requested_usd": null,
-      "approved_usd": null,
+      "approved_usd": 30000.0,
       "date_applied": "2026-10-26",
-      "date_received": null,
+      "date_received": "2026-11-23",
       "next_action": ""
     },
     {
@@ -10591,7 +10766,7 @@ window.DASHBOARD_DATA = {
       "program": "Crusoe Intelligence Foundry Credit Program",
       "provider": "Crusoe",
       "consultant": "Denys",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-06",
@@ -10695,7 +10870,7 @@ window.DASHBOARD_DATA = {
       "program": "Crusoe Intelligence Foundry Credit Program",
       "provider": "Crusoe",
       "consultant": "Denys",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-19",
@@ -10851,7 +11026,7 @@ window.DASHBOARD_DATA = {
       "program": "Azure for Startups (Investor Network)",
       "provider": "Microsoft Azure",
       "consultant": "Mykhailo",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-09",
@@ -13366,6 +13541,97 @@ window.DASHBOARD_DATA = {
       "date_applied": "2026-11-20",
       "date_received": null,
       "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "cofferdam.online",
+      "program": "xAI Grok",
+      "provider": "Grok",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-23",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "bitting.bid",
+      "program": "xAI Grok",
+      "provider": "Grok",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-23",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "keelson.ink",
+      "program": "Regolo.ai Builder Program",
+      "provider": "Regolo.ai (Seeweb)",
+      "consultant": "Luisa",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-23",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "cotejo.club",
+      "program": "Regolo.ai Builder Program",
+      "provider": "Regolo.ai (Seeweb)",
+      "consultant": "Luisa",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-23",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "pintle.cloud",
+      "program": "Regolo.ai Builder Program",
+      "provider": "Regolo.ai (Seeweb)",
+      "consultant": "Luisa",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-23",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "ferrule.fit",
+      "program": "Regolo.ai Builder Program",
+      "provider": "Regolo.ai (Seeweb)",
+      "consultant": "Luisa",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-23",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "bitting.bid",
+      "program": "Regolo.ai Builder Program",
+      "provider": "Regolo.ai (Seeweb)",
+      "consultant": "Luisa",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-23",
+      "date_received": null,
+      "next_action": ""
     }
   ],
   "timeseries": {
@@ -13577,6 +13843,10 @@ window.DASHBOARD_DATA = {
       [
         "2026-11-20",
         13
+      ],
+      [
+        "2026-11-23",
+        7
       ]
     ],
     "received": [
@@ -13707,6 +13977,10 @@ window.DASHBOARD_DATA = {
       [
         "2026-11-20",
         32000.0
+      ],
+      [
+        "2026-11-23",
+        60000.0
       ]
     ]
   }
