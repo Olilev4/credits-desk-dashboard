@@ -1,12 +1,12 @@
 window.DASHBOARD_DATA = {
-  "generated_at": "2026-11-24 09:03 UTC",
+  "generated_at": "2026-11-24 22:05 UTC",
   "source": "Credits desk tracker (Google Sheet)",
   "overall": {
-    "total_applications": 911,
+    "total_applications": 919,
     "total_received_usd": 1796680.0,
     "open_pipeline_usd": 80000.0,
     "status_counts": {
-      "Applied": 518,
+      "Applied": 527,
       "Received": 164,
       "Blocked / unable to apply": 3,
       "Action required": 5,
@@ -15,7 +15,7 @@ window.DASHBOARD_DATA = {
       "Blocked": 1,
       "Rejected by NVIDIA": 19,
       "Approved": 6,
-      "": 2
+      "": 1
     }
   },
   "companies": [
@@ -722,7 +722,7 @@ window.DASHBOARD_DATA = {
       "provider": "Tencent Cloud",
       "credit_amount": "",
       "tier": "",
-      "notes": "Dariia"
+      "notes": "Program is closed"
     },
     {
       "program": "Runware",
@@ -827,7 +827,7 @@ window.DASHBOARD_DATA = {
       "provider": "",
       "credit_amount": "",
       "tier": "",
-      "notes": "Yuliia"
+      "notes": "Чекаємо сайти від Юри, коли будуть готові сайти, де не знадується лінк на фандінг"
     },
     {
       "program": "FlexAI Startup Program",
@@ -844,13 +844,6 @@ window.DASHBOARD_DATA = {
       "notes": "Dariia"
     },
     {
-      "program": "GMI Cloud SCALE",
-      "provider": "",
-      "credit_amount": "After approval, you must make your first API call to unlock $500 in credits, deposit your own money to receive up to $4,500 in 1:1 matching credits, while access to partner credits is subject to unspecified conditions.",
-      "tier": "",
-      "notes": "Yuliia"
-    },
-    {
       "program": "World Actions for Startups",
       "provider": "",
       "credit_amount": "",
@@ -858,39 +851,11 @@ window.DASHBOARD_DATA = {
       "notes": "Luisa"
     },
     {
-      "program": "Nirvana Labs Startup Credits",
-      "provider": "",
-      "credit_amount": "The $25,000 award effectively works as a capped 40% discount on your infrastructure expenses, rather than freely spendable credits; you must spend at least $37,500 of your own money to benefit from the full award.",
-      "tier": "",
-      "notes": "Yuliia"
-    },
-    {
       "program": "Wiro for Startups",
       "provider": "",
       "credit_amount": "",
       "tier": "",
-      "notes": "yes"
-    },
-    {
-      "program": "Modal for Builders",
-      "provider": "",
-      "credit_amount": "",
-      "tier": "",
-      "notes": "We’ve selected our first group of Modal for Builders recipients. The application form remains open if you’d like to share your project. We’re not actively reviewing new submissions, so we can’t guarantee a review or response."
-    },
-    {
-      "program": "Lightning AI free GPU hours",
-      "provider": "",
-      "credit_amount": "",
-      "tier": "",
-      "notes": "yes"
-    },
-    {
-      "program": "Vercel X",
-      "provider": "",
-      "credit_amount": "",
-      "tier": "",
-      "notes": "All accepted participants must plan to be in San Francisco for the full program from January 19, 2027 to March 2, 2027."
+      "notes": "Dariia"
     },
     {
       "program": "AMD AI Start Up Program",
@@ -912,6 +877,41 @@ window.DASHBOARD_DATA = {
       "credit_amount": "",
       "tier": "",
       "notes": "have to apply from NVIDIA Inception"
+    },
+    {
+      "program": "Nirvana Labs Startup Credits",
+      "provider": "",
+      "credit_amount": "The $25,000 award effectively works as a capped 40% discount on your infrastructure expenses, rather than freely spendable credits; you must spend at least $37,500 of your own money to benefit from the full award.",
+      "tier": "",
+      "notes": "Yuliia"
+    },
+    {
+      "program": "Modal for Builders",
+      "provider": "",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "We’ve selected our first group of Modal for Builders recipients. The application form remains open if you’d like to share your project. We’re not actively reviewing new submissions, so we can’t guarantee a review or response."
+    },
+    {
+      "program": "Lightning AI free GPU hours",
+      "provider": "",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "Offers a free tier, no active startup programme"
+    },
+    {
+      "program": "Vercel X",
+      "provider": "",
+      "credit_amount": "",
+      "tier": "",
+      "notes": "All accepted participants must plan to be in San Francisco for the full program from January 19, 2027 to March 2, 2027."
+    },
+    {
+      "program": "GMI Cloud SCALE",
+      "provider": "",
+      "credit_amount": "After approval, you must make your first API call to unlock $500 in credits, deposit your own money to receive up to $4,500 in 1:1 matching credits, while access to partner credits is subject to unspecified conditions.",
+      "tier": "",
+      "notes": "Yuliia"
     },
     {
       "program": "Algolia",
@@ -13609,13 +13609,117 @@ window.DASHBOARD_DATA = {
     {
       "id": "",
       "company": "ferrule.fit",
-      "program": "",
-      "provider": "",
-      "consultant": "",
-      "status": "",
+      "program": "Wollnut for Startups",
+      "provider": "Wollnut for Startups",
+      "consultant": "Dariia",
+      "status": "Applied",
       "requested_usd": null,
       "approved_usd": null,
-      "date_applied": null,
+      "date_applied": "2026-11-24",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "ledgenone.com",
+      "program": "Wollnut for Startups",
+      "provider": "Wollnut for Startups",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-24",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "keelson.ink",
+      "program": "Wiro for Startups",
+      "provider": "Wiro for Startups",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-24",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "forbear.works",
+      "program": "Wollnut for Startups",
+      "provider": "Wollnut for Startups",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-24",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "ferrule.fit",
+      "program": "Wiro for Startups",
+      "provider": "Wiro for Startups",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-24",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "plimsoll.live",
+      "program": "Wollnut for Startups",
+      "provider": "Wollnut for Startups",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-24",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "muniment.world",
+      "program": "Wollnut for Startups",
+      "provider": "Wollnut for Startups",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-24",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "corrigenda.club",
+      "program": "Regolo.ai Builder Program",
+      "provider": "Regolo.ai (Seeweb)",
+      "consultant": "Luisa",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-24",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "recension.bond",
+      "program": "Regolo.ai Builder Program",
+      "provider": "Regolo.ai (Seeweb)",
+      "consultant": "Luisa",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-24",
       "date_received": null,
       "next_action": ""
     }
@@ -13836,7 +13940,7 @@ window.DASHBOARD_DATA = {
       ],
       [
         "2026-11-24",
-        1
+        10
       ]
     ],
     "received": [
