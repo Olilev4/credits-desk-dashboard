@@ -1,22 +1,21 @@
 window.DASHBOARD_DATA = {
-  "generated_at": "2026-11-23 23:36 UTC",
+  "generated_at": "2026-11-24 09:03 UTC",
   "source": "Credits desk tracker (Google Sheet)",
   "overall": {
-    "total_applications": 912,
-    "total_received_usd": 1696680.0,
+    "total_applications": 911,
+    "total_received_usd": 1796680.0,
     "open_pipeline_usd": 80000.0,
     "status_counts": {
-      "Applied": 549,
-      "Received": 159,
+      "Applied": 518,
+      "Received": 164,
       "Blocked / unable to apply": 3,
       "Action required": 5,
       "Pending": 2,
-      "Rejected": 164,
+      "Rejected": 191,
       "Blocked": 1,
       "Rejected by NVIDIA": 19,
       "Approved": 6,
-      "Scheduled": 3,
-      "": 1
+      "": 2
     }
   },
   "companies": [
@@ -828,28 +827,28 @@ window.DASHBOARD_DATA = {
       "provider": "",
       "credit_amount": "",
       "tier": "",
-      "notes": "yes"
+      "notes": "Yuliia"
     },
     {
       "program": "FlexAI Startup Program",
       "provider": "",
       "credit_amount": "",
       "tier": "",
-      "notes": "yes"
+      "notes": "The application process entails booking an introductory call with the team. From their FAQ section: \"How do I apply? - Book an intro call below. We'll walk through your workload, confirm fit, and get you onboarded, usually within 10 business days.\""
     },
     {
       "program": "Wollnut for Startups",
       "provider": "",
       "credit_amount": "",
       "tier": "",
-      "notes": "yes"
+      "notes": "Dariia"
     },
     {
       "program": "GMI Cloud SCALE",
       "provider": "",
-      "credit_amount": "",
+      "credit_amount": "After approval, you must make your first API call to unlock $500 in credits, deposit your own money to receive up to $4,500 in 1:1 matching credits, while access to partner credits is subject to unspecified conditions.",
       "tier": "",
-      "notes": "yes"
+      "notes": "Yuliia"
     },
     {
       "program": "World Actions for Startups",
@@ -861,9 +860,9 @@ window.DASHBOARD_DATA = {
     {
       "program": "Nirvana Labs Startup Credits",
       "provider": "",
-      "credit_amount": "",
+      "credit_amount": "The $25,000 award effectively works as a capped 40% discount on your infrastructure expenses, rather than freely spendable credits; you must spend at least $37,500 of your own money to benefit from the full award.",
       "tier": "",
-      "notes": "yes"
+      "notes": "Yuliia"
     },
     {
       "program": "Wiro for Startups",
@@ -877,7 +876,7 @@ window.DASHBOARD_DATA = {
       "provider": "",
       "credit_amount": "",
       "tier": "",
-      "notes": "yes"
+      "notes": "We’ve selected our first group of Modal for Builders recipients. The application form remains open if you’d like to share your project. We’re not actively reviewing new submissions, so we can’t guarantee a review or response."
     },
     {
       "program": "Lightning AI free GPU hours",
@@ -891,7 +890,7 @@ window.DASHBOARD_DATA = {
       "provider": "",
       "credit_amount": "",
       "tier": "",
-      "notes": "yes"
+      "notes": "All accepted participants must plan to be in San Francisco for the full program from January 19, 2027 to March 2, 2027."
     },
     {
       "program": "AMD AI Start Up Program",
@@ -9297,11 +9296,11 @@ window.DASHBOARD_DATA = {
       "program": "xAI Grok",
       "provider": "Grok",
       "consultant": "Dariia",
-      "status": "Applied",
+      "status": "Received",
       "requested_usd": null,
-      "approved_usd": null,
+      "approved_usd": 5000.0,
       "date_applied": "2026-10-26",
-      "date_received": null,
+      "date_received": "2026-11-24",
       "next_action": ""
     },
     {
@@ -9310,11 +9309,11 @@ window.DASHBOARD_DATA = {
       "program": "xAI Grok",
       "provider": "Grok",
       "consultant": "Dariia",
-      "status": "Applied",
+      "status": "Received",
       "requested_usd": null,
-      "approved_usd": null,
+      "approved_usd": 30000.0,
       "date_applied": "2026-10-26",
-      "date_received": null,
+      "date_received": "2026-11-24",
       "next_action": ""
     },
     {
@@ -9323,11 +9322,11 @@ window.DASHBOARD_DATA = {
       "program": "xAI Grok",
       "provider": "Grok",
       "consultant": "Dariia",
-      "status": "Applied",
+      "status": "Received",
       "requested_usd": null,
-      "approved_usd": null,
+      "approved_usd": 5000.0,
       "date_applied": "2026-10-26",
-      "date_received": null,
+      "date_received": "2026-11-24",
       "next_action": ""
     },
     {
@@ -9557,11 +9556,11 @@ window.DASHBOARD_DATA = {
       "program": "xAI Grok",
       "provider": "Grok",
       "consultant": "Dariia",
-      "status": "Applied",
+      "status": "Received",
       "requested_usd": null,
-      "approved_usd": null,
+      "approved_usd": 30000.0,
       "date_applied": "2026-11-02",
-      "date_received": null,
+      "date_received": "2026-11-24",
       "next_action": ""
     },
     {
@@ -9934,7 +9933,7 @@ window.DASHBOARD_DATA = {
       "program": "RunPod Startup Program",
       "provider": "RunPod",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-02",
@@ -9947,7 +9946,7 @@ window.DASHBOARD_DATA = {
       "program": "RunPod Startup Program",
       "provider": "RunPod",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-02",
@@ -9960,7 +9959,7 @@ window.DASHBOARD_DATA = {
       "program": "RunPod Startup Program",
       "provider": "RunPod",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-03",
@@ -9973,7 +9972,7 @@ window.DASHBOARD_DATA = {
       "program": "RunPod Startup Program",
       "provider": "RunPod",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-03",
@@ -9986,7 +9985,7 @@ window.DASHBOARD_DATA = {
       "program": "RunPod Startup Program",
       "provider": "RunPod",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-03",
@@ -9999,7 +9998,7 @@ window.DASHBOARD_DATA = {
       "program": "RunPod Startup Program",
       "provider": "RunPod",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-03",
@@ -10012,7 +10011,7 @@ window.DASHBOARD_DATA = {
       "program": "RunPod Startup Program",
       "provider": "RunPod",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-04",
@@ -10025,7 +10024,7 @@ window.DASHBOARD_DATA = {
       "program": "RunPod Startup Program",
       "provider": "RunPod",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-04",
@@ -10038,7 +10037,7 @@ window.DASHBOARD_DATA = {
       "program": "RunPod Startup Program",
       "provider": "RunPod",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-04",
@@ -10051,7 +10050,7 @@ window.DASHBOARD_DATA = {
       "program": "RunPod Startup Program",
       "provider": "RunPod",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-04",
@@ -10064,7 +10063,7 @@ window.DASHBOARD_DATA = {
       "program": "RunPod Startup Program",
       "provider": "RunPod",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-05",
@@ -10077,7 +10076,7 @@ window.DASHBOARD_DATA = {
       "program": "RunPod Startup Program",
       "provider": "RunPod",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-05",
@@ -10090,7 +10089,7 @@ window.DASHBOARD_DATA = {
       "program": "RunPod Startup Program",
       "provider": "RunPod",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-05",
@@ -10103,7 +10102,7 @@ window.DASHBOARD_DATA = {
       "program": "RunPod Startup Program",
       "provider": "RunPod",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-05",
@@ -10116,7 +10115,7 @@ window.DASHBOARD_DATA = {
       "program": "RunPod Startup Program",
       "provider": "RunPod",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-05",
@@ -10129,7 +10128,7 @@ window.DASHBOARD_DATA = {
       "program": "RunPod Startup Program",
       "provider": "RunPod",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-06",
@@ -10142,7 +10141,7 @@ window.DASHBOARD_DATA = {
       "program": "RunPod Startup Program",
       "provider": "RunPod",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-06",
@@ -10155,7 +10154,7 @@ window.DASHBOARD_DATA = {
       "program": "RunPod Startup Program",
       "provider": "RunPod",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-06",
@@ -10168,7 +10167,7 @@ window.DASHBOARD_DATA = {
       "program": "RunPod Startup Program",
       "provider": "RunPod",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-06",
@@ -10181,7 +10180,7 @@ window.DASHBOARD_DATA = {
       "program": "RunPod Startup Program",
       "provider": "RunPod",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-09",
@@ -10194,7 +10193,7 @@ window.DASHBOARD_DATA = {
       "program": "RunPod Startup Program",
       "provider": "RunPod",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-09",
@@ -10207,7 +10206,7 @@ window.DASHBOARD_DATA = {
       "program": "RunPod Startup Program",
       "provider": "RunPod",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-09",
@@ -10220,7 +10219,7 @@ window.DASHBOARD_DATA = {
       "program": "RunPod Startup Program",
       "provider": "RunPod",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-09",
@@ -10233,7 +10232,7 @@ window.DASHBOARD_DATA = {
       "program": "RunPod Startup Program",
       "provider": "RunPod",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-11",
@@ -10246,7 +10245,7 @@ window.DASHBOARD_DATA = {
       "program": "RunPod Startup Program",
       "provider": "RunPod",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-11",
@@ -10272,7 +10271,7 @@ window.DASHBOARD_DATA = {
       "program": "RunPod Startup Program",
       "provider": "RunPod",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-12",
@@ -10285,49 +10284,10 @@ window.DASHBOARD_DATA = {
       "program": "RunPod Startup Program",
       "provider": "RunPod",
       "consultant": "Yuliia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-12",
-      "date_received": null,
-      "next_action": ""
-    },
-    {
-      "id": "",
-      "company": "cotejo.club",
-      "program": "RunPod Startup Program",
-      "provider": "RunPod",
-      "consultant": "Yuliia",
-      "status": "Scheduled",
-      "requested_usd": null,
-      "approved_usd": null,
-      "date_applied": null,
-      "date_received": null,
-      "next_action": ""
-    },
-    {
-      "id": "",
-      "company": "pirca.co",
-      "program": "RunPod Startup Program",
-      "provider": "RunPod",
-      "consultant": "Yuliia",
-      "status": "Scheduled",
-      "requested_usd": null,
-      "approved_usd": null,
-      "date_applied": null,
-      "date_received": null,
-      "next_action": ""
-    },
-    {
-      "id": "",
-      "company": "Dagnul.co",
-      "program": "RunPod Startup Program",
-      "provider": "RunPod",
-      "consultant": "Yuliia",
-      "status": "Scheduled",
-      "requested_usd": null,
-      "approved_usd": null,
-      "date_applied": null,
       "date_received": null,
       "next_action": ""
     },
@@ -13444,11 +13404,11 @@ window.DASHBOARD_DATA = {
       "program": "xAI Grok",
       "provider": "Grok",
       "consultant": "Dariia",
-      "status": "Applied",
+      "status": "Received",
       "requested_usd": null,
-      "approved_usd": null,
-      "date_applied": "2026-11-20",
-      "date_received": null,
+      "approved_usd": 30000.0,
+      "date_applied": "2026-11-13",
+      "date_received": "2026-11-24",
       "next_action": ""
     },
     {
@@ -13630,6 +13590,32 @@ window.DASHBOARD_DATA = {
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-23",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "keelson.ink",
+      "program": "Wollnut for Startups",
+      "provider": "Wollnut for Startups",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-24",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "ferrule.fit",
+      "program": "",
+      "provider": "",
+      "consultant": "",
+      "status": "",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": null,
       "date_received": null,
       "next_action": ""
     }
@@ -13822,7 +13808,7 @@ window.DASHBOARD_DATA = {
       ],
       [
         "2026-11-13",
-        25
+        26
       ],
       [
         "2026-11-16",
@@ -13842,11 +13828,15 @@ window.DASHBOARD_DATA = {
       ],
       [
         "2026-11-20",
-        13
+        12
       ],
       [
         "2026-11-23",
         7
+      ],
+      [
+        "2026-11-24",
+        1
       ]
     ],
     "received": [
@@ -13981,6 +13971,10 @@ window.DASHBOARD_DATA = {
       [
         "2026-11-23",
         60000.0
+      ],
+      [
+        "2026-11-24",
+        100000.0
       ]
     ]
   }
