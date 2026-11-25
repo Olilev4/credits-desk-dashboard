@@ -1,17 +1,17 @@
 window.DASHBOARD_DATA = {
-  "generated_at": "2026-11-24 22:05 UTC",
+  "generated_at": "2026-11-25 07:41 UTC",
   "source": "Credits desk tracker (Google Sheet)",
   "overall": {
     "total_applications": 919,
-    "total_received_usd": 1796680.0,
+    "total_received_usd": 1826680.0,
     "open_pipeline_usd": 80000.0,
     "status_counts": {
-      "Applied": 527,
-      "Received": 164,
+      "Applied": 525,
+      "Received": 165,
       "Blocked / unable to apply": 3,
       "Action required": 5,
       "Pending": 2,
-      "Rejected": 191,
+      "Rejected": 192,
       "Blocked": 1,
       "Rejected by NVIDIA": 19,
       "Approved": 6,
@@ -9569,11 +9569,11 @@ window.DASHBOARD_DATA = {
       "program": "xAI Grok",
       "provider": "Grok",
       "consultant": "Dariia",
-      "status": "Applied",
+      "status": "Received",
       "requested_usd": null,
-      "approved_usd": null,
+      "approved_usd": 30000.0,
       "date_applied": "2026-11-02",
-      "date_received": null,
+      "date_received": "2026-11-24",
       "next_action": ""
     },
     {
@@ -13664,7 +13664,7 @@ window.DASHBOARD_DATA = {
       "program": "Wiro for Startups",
       "provider": "Wiro for Startups",
       "consultant": "Dariia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-24",
@@ -14078,7 +14078,7 @@ window.DASHBOARD_DATA = {
       ],
       [
         "2026-11-24",
-        100000.0
+        130000.0
       ]
     ]
   }
