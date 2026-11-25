@@ -1,17 +1,17 @@
 window.DASHBOARD_DATA = {
-  "generated_at": "2026-11-25 07:41 UTC",
+  "generated_at": "2026-11-25 21:21 UTC",
   "source": "Credits desk tracker (Google Sheet)",
   "overall": {
-    "total_applications": 919,
-    "total_received_usd": 1826680.0,
+    "total_applications": 922,
+    "total_received_usd": 2126680.0,
     "open_pipeline_usd": 80000.0,
     "status_counts": {
-      "Applied": 525,
-      "Received": 165,
+      "Applied": 524,
+      "Received": 168,
       "Blocked / unable to apply": 3,
       "Action required": 5,
       "Pending": 2,
-      "Rejected": 192,
+      "Rejected": 193,
       "Blocked": 1,
       "Rejected by NVIDIA": 19,
       "Approved": 6,
@@ -2289,7 +2289,7 @@ window.DASHBOARD_DATA = {
       "program": "Microsoft for Startups",
       "provider": "Microsoft Azure",
       "consultant": "Mykhailo",
-      "status": "Applied",
+      "status": "Received",
       "requested_usd": null,
       "approved_usd": 100000.0,
       "date_applied": "2026-09-22",
@@ -2393,11 +2393,11 @@ window.DASHBOARD_DATA = {
       "program": "Microsoft for Startups",
       "provider": "Microsoft Azure",
       "consultant": "Mykhailo",
-      "status": "Applied",
+      "status": "Received",
       "requested_usd": null,
-      "approved_usd": null,
+      "approved_usd": 100000.0,
       "date_applied": "2026-09-21",
-      "date_received": null,
+      "date_received": "2026-11-24",
       "next_action": "Wait for decision"
     },
     {
@@ -5942,7 +5942,7 @@ window.DASHBOARD_DATA = {
       "program": "Azure Founders Hub Basic",
       "provider": "Microsoft Azure",
       "consultant": "Mykhailo",
-      "status": "Applied",
+      "status": "Received",
       "requested_usd": null,
       "approved_usd": 100000.0,
       "date_applied": "2026-09-28",
@@ -13638,7 +13638,7 @@ window.DASHBOARD_DATA = {
       "program": "Wiro for Startups",
       "provider": "Wiro for Startups",
       "consultant": "Dariia",
-      "status": "Applied",
+      "status": "Rejected",
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-24",
@@ -13720,6 +13720,45 @@ window.DASHBOARD_DATA = {
       "requested_usd": null,
       "approved_usd": null,
       "date_applied": "2026-11-24",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "ledgenone.com",
+      "program": "Wiro for Startups",
+      "provider": "Wiro for Startups",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-25",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "understudy.fit",
+      "program": "Wollnut for Startups",
+      "provider": "Wollnut for Startups",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-25",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "recension.bond",
+      "program": "Wollnut for Startups",
+      "provider": "Wollnut for Startups",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-25",
       "date_received": null,
       "next_action": ""
     }
@@ -13941,6 +13980,10 @@ window.DASHBOARD_DATA = {
       [
         "2026-11-24",
         10
+      ],
+      [
+        "2026-11-25",
+        3
       ]
     ],
     "received": [
@@ -14065,6 +14108,10 @@ window.DASHBOARD_DATA = {
         25000.0
       ],
       [
+        "2026-11-18",
+        200000.0
+      ],
+      [
         "2026-11-19",
         22600.0
       ],
@@ -14078,7 +14125,7 @@ window.DASHBOARD_DATA = {
       ],
       [
         "2026-11-24",
-        130000.0
+        230000.0
       ]
     ]
   }
