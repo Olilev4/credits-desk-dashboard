@@ -1,20 +1,20 @@
 window.DASHBOARD_DATA = {
-  "generated_at": "2026-11-26 07:30 UTC",
+  "generated_at": "2026-11-26 21:08 UTC",
   "source": "Credits desk tracker (Google Sheet)",
   "overall": {
-    "total_applications": 922,
-    "total_received_usd": 2126680.0,
+    "total_applications": 923,
+    "total_received_usd": 2150090.0,
     "open_pipeline_usd": 80000.0,
     "status_counts": {
-      "Applied": 524,
-      "Received": 168,
+      "Applied": 521,
+      "Received": 174,
       "Blocked / unable to apply": 3,
       "Action required": 5,
       "Pending": 2,
       "Rejected": 193,
       "Blocked": 1,
       "Rejected by NVIDIA": 19,
-      "Approved": 6,
+      "Approved": 4,
       "": 1
     }
   },
@@ -9426,7 +9426,7 @@ window.DASHBOARD_DATA = {
       "program": "Baseten Startup Credits",
       "provider": "Baseten",
       "consultant": "Luisa",
-      "status": "Approved",
+      "status": "Received",
       "requested_usd": null,
       "approved_usd": 255.0,
       "date_applied": "2026-10-28",
@@ -10336,7 +10336,7 @@ window.DASHBOARD_DATA = {
       "program": "Baseten Startup Credits",
       "provider": "Baseten",
       "consultant": "Luisa",
-      "status": "Approved",
+      "status": "Received",
       "requested_usd": null,
       "approved_usd": 755.0,
       "date_applied": "2026-11-02",
@@ -12377,9 +12377,9 @@ window.DASHBOARD_DATA = {
       "program": "ElevenLabs Startup Grant",
       "provider": "ElevenLabs",
       "consultant": "Denys",
-      "status": "Applied",
+      "status": "Received",
       "requested_usd": null,
-      "approved_usd": null,
+      "approved_usd": 5600.0,
       "date_applied": "2026-11-12",
       "date_received": null,
       "next_action": ""
@@ -12390,9 +12390,9 @@ window.DASHBOARD_DATA = {
       "program": "ElevenLabs Startup Grant",
       "provider": "ElevenLabs",
       "consultant": "Denys",
-      "status": "Applied",
+      "status": "Received",
       "requested_usd": null,
-      "approved_usd": null,
+      "approved_usd": 5600.0,
       "date_applied": "2026-11-12",
       "date_received": null,
       "next_action": ""
@@ -12403,9 +12403,9 @@ window.DASHBOARD_DATA = {
       "program": "ElevenLabs Startup Grant",
       "provider": "ElevenLabs",
       "consultant": "Denys",
-      "status": "Applied",
+      "status": "Received",
       "requested_usd": null,
-      "approved_usd": null,
+      "approved_usd": 5600.0,
       "date_applied": "2026-11-13",
       "date_received": null,
       "next_action": ""
@@ -12416,9 +12416,9 @@ window.DASHBOARD_DATA = {
       "program": "ElevenLabs Startup Grant",
       "provider": "ElevenLabs",
       "consultant": "Denys",
-      "status": "Applied",
+      "status": "Received",
       "requested_usd": null,
-      "approved_usd": null,
+      "approved_usd": 5600.0,
       "date_applied": "2026-11-13",
       "date_received": null,
       "next_action": ""
@@ -13761,6 +13761,19 @@ window.DASHBOARD_DATA = {
       "date_applied": "2026-11-25",
       "date_received": null,
       "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "forbear.works",
+      "program": "Wiro for Startups",
+      "provider": "Wiro for Startups",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-26",
+      "date_received": null,
+      "next_action": ""
     }
   ],
   "timeseries": {
@@ -13984,6 +13997,10 @@ window.DASHBOARD_DATA = {
       [
         "2026-11-25",
         3
+      ],
+      [
+        "2026-11-26",
+        1
       ]
     ],
     "received": [
@@ -14105,7 +14122,7 @@ window.DASHBOARD_DATA = {
       ],
       [
         "2026-11-17",
-        25000.0
+        26010.0
       ],
       [
         "2026-11-18",
