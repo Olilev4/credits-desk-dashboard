@@ -1,12 +1,12 @@
 window.DASHBOARD_DATA = {
-  "generated_at": "2026-11-27 07:28 UTC",
+  "generated_at": "2026-11-27 20:52 UTC",
   "source": "Credits desk tracker (Google Sheet)",
   "overall": {
-    "total_applications": 923,
+    "total_applications": 926,
     "total_received_usd": 2150090.0,
     "open_pipeline_usd": 80000.0,
     "status_counts": {
-      "Applied": 521,
+      "Applied": 524,
       "Received": 174,
       "Blocked / unable to apply": 3,
       "Action required": 5,
@@ -37,8 +37,8 @@ window.DASHBOARD_DATA = {
       "Contact email": "bogdan.zahriia@mailerr.co",
       "Stage": "",
       "Account owner": "",
-      "Applications": "1",
-      "Open": "0",
+      "Applications": "2",
+      "Open": "1",
       "Approved $": "$1,000",
       "Received $": "$1,000",
       "Notes": ""
@@ -121,8 +121,8 @@ window.DASHBOARD_DATA = {
       "Contact email": "viktoria.holiak@expandbase.co",
       "Stage": "",
       "Account owner": "",
-      "Applications": "2",
-      "Open": "1",
+      "Applications": "3",
+      "Open": "2",
       "Approved $": "$1,000",
       "Received $": "$1,000",
       "Notes": ""
@@ -13774,6 +13774,45 @@ window.DASHBOARD_DATA = {
       "date_applied": "2026-11-26",
       "date_received": null,
       "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "parley.deal",
+      "program": "xAI Grok — Signup Credit",
+      "provider": "Grok",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-27",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "mailerr",
+      "program": "xAI Grok — Signup Credit",
+      "provider": "Grok",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-27",
+      "date_received": null,
+      "next_action": ""
+    },
+    {
+      "id": "",
+      "company": "expandbase",
+      "program": "xAI Grok — Signup Credit",
+      "provider": "Grok",
+      "consultant": "Dariia",
+      "status": "Applied",
+      "requested_usd": null,
+      "approved_usd": null,
+      "date_applied": "2026-11-27",
+      "date_received": null,
+      "next_action": ""
     }
   ],
   "timeseries": {
@@ -14001,6 +14040,10 @@ window.DASHBOARD_DATA = {
       [
         "2026-11-26",
         1
+      ],
+      [
+        "2026-11-27",
+        3
       ]
     ],
     "received": [
